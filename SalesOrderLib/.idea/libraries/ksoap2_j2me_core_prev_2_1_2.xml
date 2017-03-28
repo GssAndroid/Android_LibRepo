@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ksoap2-j2me-core-prev-2.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SapLibSoap/externallib/ksoap2-j2me-core-prev-2.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

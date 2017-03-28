@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgcolor"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout 
+		android:id="@+id/menuTV"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" android:layout_marginTop="3dip">
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_centerInParent="true">
+			<TextView 
+				android:id="@+id/summaryTV"
+		        android:layout_height="wrap_content" android:background="@drawable/tvborder_sel"
+		        android:layout_width="wrap_content" style="@style/appLabel"
+				android:text="Summary" android:padding="5dp"/>
+			<TextView 		    
+			    android:id="@+id/imagesTV" 
+			    android:layout_width="wrap_content" android:background="@drawable/tvborder_unsel"
+			    android:layout_height="wrap_content" style="@style/appLabel"
+				android:text="Images" 
+			    android:layout_toRightOf="@+id/summaryTV" android:padding="5dp"/>
+			<TextView 
+			    android:id="@+id/detailsTV" android:background="@drawable/tvborder_unsel"
+			    android:layout_width="wrap_content" style="@style/appLabel"
+			    android:layout_height="wrap_content"
+				android:text="Details" 
+			    android:layout_toRightOf="@+id/imagesTV" android:padding="5dp"/>
+			<TextView 
+			    android:id="@+id/scartTV" android:background="@drawable/tvborder_unsel"
+			    android:layout_width="wrap_content" style="@style/appLabel"
+			    android:layout_height="wrap_content"
+				android:text="Shopping Cart" 
+			    android:layout_toRightOf="@+id/detailsTV" android:padding="5dp"/>
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/summaryll" android:layout_below="@id/menuTV" 
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >	
+		<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp">
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" > 
+				<LinearLayout
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:layout_marginLeft="5dip"
+				     android:layout_marginTop="5dip"
+				     android:orientation="vertical"> 
+				     <ImageView 
+						android:id="@+id/imgVal"
+						android:layout_width="40dp"
+						android:layout_height="40dp"
+						android:layout_gravity="center_vertical|center_horizontal"
+						/>	
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/descll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="100dp"
+							android:id="@+id/desc" 
+							android:text="@string/MAINSCR_PROD_DETAILS_PRODESC"
+							style="@style/appLabel">
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/descVal" >
+						</TextView>
+					</LinearLayout> 
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/pnoll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="100dp"
+							android:id="@+id/pno" 
+							android:text="@string/MAINSCR_PROD_DETAILS_PRONO"
+							style="@style/appLabel">
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/pnoVal" >
+						</TextView>
+					</LinearLayout> 
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/pricell"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="100dp"
+							android:id="@+id/price" 
+							android:text="@string/MAINSCR_PROD_DETAILS_PROPRICE"
+							style="@style/appLabel">
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/priceVal" >
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/runitVal" >
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/cunitVal" >
+						</TextView>
+					</LinearLayout> 				
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/text1ll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/text1Val" >
+						</TextView>
+					</LinearLayout> 
+				</LinearLayout>	
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/detailsll" android:layout_below="@+id/summaryll"
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >
+		<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp">
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" > 				 				
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text2ll"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text2Val" >
+					</TextView>
+				</LinearLayout> 				 				
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text3ll"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text3Val" >
+					</TextView>
+				</LinearLayout> 				 				
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text4ll"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text4Val" >
+					</TextView>
+				</LinearLayout> 
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/imagesll" android:layout_below="@+id/detailsll"
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >
+		<!-- <ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp"> -->
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" > 		
+				<Gallery
+			        android:id="@+id/gallery1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" />
+			    <ImageView
+			        android:id="@+id/imageview1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/gallery1" />
+			</RelativeLayout>
+		<!-- </ScrollView> -->
+	</LinearLayout>
+	<RelativeLayout 
+	    android:orientation="horizontal" android:layout_below="@+id/imagesll"
+	    android:layout_width="fill_parent" android:layout_height="32dip" android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip" android:id="@+id/showlinear"  android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:layout_centerInParent="true">	
+		<ImageButton 
+			android:id="@+id/showprevbtn"
+			android:gravity="left"
+			android:layout_marginLeft="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:background="@drawable/prev"  />		
+		<ImageButton 
+			android:id="@+id/shownextbtn"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:background="@drawable/next"  />
+	</RelativeLayout>	
+</RelativeLayout>

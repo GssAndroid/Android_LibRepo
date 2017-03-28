@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/list_item_bg"
+    android:id="@+id/llitembg"
+    android:layout_margin="5dip" android:layout_gravity="center_vertical|center_horizontal">	
+    <LinearLayout 
+		android:layout_width="30dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5px" 
+		android:orientation="vertical" >
+		<ImageView 
+			android:id="@+id/status"
+			android:layout_marginTop="5px" 
+			android:layout_marginRight="7px" 
+			android:src="@drawable/light_grey" android:layout_width="24dip" android:layout_height="24dip"/>
+	</LinearLayout>	
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_weight="1"> 
+	    <TextView 
+			android:layout_marginTop="5px" 
+			android:focusable="false" 
+			android:id="@+id/contactdetails" 
+			style="@style/appText"
+			android:text=""
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:layout_width="wrap_content">
+		</TextView> 
+		<TextView 
+			android:layout_marginTop="2px" 
+			android:focusable="false" 
+			android:id="@+id/desc" 
+			style="@style/appText"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:layout_width="wrap_content">
+		</TextView>
+		<TextView 
+			android:layout_marginTop="2px" 
+			android:focusable="false" 
+			android:id="@+id/datetime" 
+			style="@style/appText"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:layout_width="wrap_content">
+		</TextView>
+	</LinearLayout>		
+	<ImageView 
+		android:id="@+id/arrowimg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dip"
+		android:background="@drawable/arrow" android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>

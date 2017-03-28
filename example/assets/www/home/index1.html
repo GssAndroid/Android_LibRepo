@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+        <script src="../library/ajax.js"></script>
+        <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+        <script src="../mobile/jquery.mobile.js"></script>
+        <script>
+        	var prevSelection = "tab1";
+        	$(document).ready(function() 
+       		{
+		        $("#navbar ul li").click(function(){
+		            var newSelection = $(this).children("a").attr("data-tab-class");
+		            $("."+prevSelection).addClass("ui-screen-hidden");
+		            $("."+newSelection).removeClass("ui-screen-hidden");
+		            prevSelection = newSelection;
+		        });
+        	});
+    	</script>
+     	<style>
+	        .tab-content{
+	            width:100%;
+	            height:250px;
+	            background-color:white;
+	            border-bottom-left-radius:0.5em;
+	            border-bottom-right-radius:0.5em;
+	        }
+	        .tab-content>div{
+	            padding:5px;
+	        }                    
+
+    	</style>
+        
+    </head>
+    
+   <body>
+ 
+	<div data-role="page" id="page1">
+  		<div data-role="header">
+    		<h1>jQuery Mobile Example</h1>
+ 		</div>
+  		<div data-role="content">   
+            <div data-role="navbar" id="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active" data-tab-class="tab1">Tab1</a></li>
+                    <li><a href="#" data-tab-class="tab2">Tab2</a></li>
+                    <li><a href="#" data-tab-class="tab3">Tab3</a></li>
+                    <li><a href="#" data-tab-class="tab4">Tab4</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab1">
+                    Tab1
+                </div>
+                <div class="tab2 ui-screen-hidden">
+                    Tab2
+                </div>
+                <div class="tab3 ui-screen-hidden">
+                    Tab3
+                </div>
+                <div class="tab4 ui-screen-hidden">
+                    Tab4
+                </div>
+            </div>
+        </div><!-- /content -->
+	</div>
+	</body>
+ 
+</html>

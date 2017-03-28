@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.globalsoft.SapQueueProcessor"
+    android:versionCode="2"
+    android:versionName="2.0" android:sharedUserId="com.globalsoft.sapqueueprocessordbuser">
+
+    <uses-sdk android:minSdkVersion="8" />
+	
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>	
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	  
+    <application
+        android:icon="@drawable/icon"  android:theme="@style/customTheme"
+        android:label="@string/app_name" android:process="com.globalsoft.sapqueueprocessorsharedprocess">
+        
+        <activity
+            android:label="@string/app_name" 
+            android:name=".About" android:configChanges="orientation">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity android:name=".QueueList" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SCR_TITLE">
+        </activity>
+        
+        <activity android:name=".LogsList" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SCR_LOG_TITLE">
+        </activity>
+                
+        <activity android:name=".LogDetails" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SCR_LOG_DETAILS_TITLE">
+        </activity>
+        
+                 
+        <activity android:name=".CallReciever" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SCR_LOG_DETAILS_TITLE">
+        </activity>
+        
+        <provider android:name="com.globalsoft.SapQueueProcessorHelper.Database.SapQueueProcessorContentProvider"
+           android:authorities="com.globalsoft.SapQueueProcessorHelper.SapQueueProcessorContentProvider"> 
+        </provider>
+                        
+        <receiver android:name="com.globalsoft.SapQueueProcessor.Receiver.SapQueueProcessorNWReceiver" android:enabled="true" android:exported="true">
+            <intent-filter  android:priority="100" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />  
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.globalsoft.SapQueueProcessorHelper.SapQueueProcessorMainService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_MAIN_SERVICE" />
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </service>
+                     
+         <service android:name="com.globalsoft.SapQueueProcessor.GSMService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_MAIN_SERVICE" />
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </service>
+        
+    </application>
+    
+</manifest>

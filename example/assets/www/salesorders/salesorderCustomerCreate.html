@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+	<script src="../library/database.js"></script>
+    <script src="../library/ajax.js"></script>
+    <script src="../library/soap.js"></script>
+    <script src="../library/constants.js"></script>
+    <script src="../library/DynamicViewLibrary.js"></script>
+    <script src="../library/filereader.js"></script>
+    <link rel="stylesheet" href="../library/waitMe.css" />
+	<script src="../library/waitMe.js"></script>
+	<script src="js/SOCustomerDetailContext.js"></script>
+	<script src="js/SOCustomerDetail.js"></script>
+	<script src="js/SOcustomersearch.js"></script>
+	
+     
+    <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	
+    <script src="../library/customscroll.js"></script>
+    
+     <script src="../library/DateTimePicker/js/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.select.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.jqm.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.ios.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android-ics.js" type="text/javascript"></script>
+
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-hu.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-hu.js" type="text/javascript"></script>
+
+    <link href="../library/DateTimePicker/css/mobiscroll.core.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android-ics.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.ios.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.sense-ui.css" rel="stylesheet" type="text/css" />
+    
+  <!-- <!--  <script src="../library/DateTimePicker/js/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.select.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.jqm.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.ios.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android-ics.js" type="text/javascript"></script>
+
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-hu.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-hu.js" type="text/javascript"></script>
+
+    <link href="../library/DateTimePicker/css/mobiscroll.core.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android-ics.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.ios.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.sense-ui.css" rel="stylesheet" type="text/css" />
+     --> 
+    
+    <script type="text/javascript" charset="utf-8">
+
+    function checkDayLightSavings() {
+      navigator.globalization.isDayLightSavingsTime(
+        new Date(),
+        function (date) {alert('dst: ' + date.dst + '\n');},
+        function () {alert('Error getting names\n');}
+      );
+    }
+
+    </script>
+    
+    <script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-1.9.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    	alert('hi i am bala');
+    }
+
+    </script>
+    
+    
+
+</head>
+
+<body>
+
+<div data-role="page" id="page">
+
+
+<div data-theme="b" data-role="header" data-position="fixed" >
+	<span class="middle">  
+		<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+		<span  id="screenTitle">Sales Order Create </span>
+	</span>
+</div>
+
+<div data-role="content">  	
+	<div class="ui-grid-a;">
+					<div id="ContactsParentDiv" style="width:100%;height:200px;border:2px solid;border-radius:10px;">
+					<div style="margin-left:5px;padding-left:5px;">
+	
+		<div class="ui-block-a" style="width:30%">
+    	<!-- <label id="txtCustomerValue" >Customers/Contacts</label>  -->
+    	</div>
+    	
+    	<div class="ui-block-b" style="width:70%;">
+    	<div class="ui-block-a" style="width:20%;">
+    	<!-- <a rel="external" href="#" id="deleteIconContacts" onclick="deleteActivityContacts()" data-role="button" data-icon="delete" style="display:none;width:40px;" >&nbsp;</a> -->
+    	<span> </span>
+    	</div>
+    	<div class="ui-block-b" style="width:60%;">
+    	<span> </span>
+    	<!-- <a href="../contacts/find.html" rel="external" data-role="button" data-icon="search" id="btnPickContact">Pick Your Contacts</a> -->
+    	</div>
+    	</div>
+    	</div>
+					</div>  <!-- end of ContactsParentDiv div tag -->					
+				</div>
+				<div class="ui-block-a" style="width:80%">
+							<input type="search" name="text" id="txtProductSearch" placeholder="Search for Product ID,Name" value="" />
+						</div>
+						<div class="ui-block-b" id="pickmatcatbtn" >
+							<a href="#" rel = "external" data-role="button" data-icon="search" style="width:40px;" onclick="gotoDetails();">&nbsp;</a>								
+						</div>
+				<br clear="all" />		
+								
+				<div class='content' data-role='content' id="contentTable">
+					<table id="table2" style="margin-top:30px;">
+						<thead class="tableheader">
+						</thead>
+						<tbody>
+						</tbody> 
+				   </table>
+				</div>	
+					
+			</div>
+    	
+    </div>
+    
+    <div id="activityContacts" style="width:100%;margin:5px;padding:5px;">
+	<div id="activityContactsResults" style="margin-top:50px;" >
+	<!-- <!-- <div  style="max-width:90%;margin:5px;">
+		<ul data-role="listview" id="listContact-1" data-theme="b" style="margin:5px;">
+		
+		No Contacts Selected
+		
+		
+		</ul>
+		</div> --> 
+		<!--  <div class="ui-block-b" style="max-width:45%;margin:5px;">
+		<ul data-role="listview" id="listContact-2" data-theme="b" style="margin:5px;">
+		
+		No Contacts Selected
+		
+		
+		</ul>
+		</div>-->
+	</div>
+</div>    
+			
+	<div class="ui-grid-a" id="addActivityContent">
+		
+	
+	</div>
+    
+    <script type="text/javascript" src="../cordova.js"></script>
+   <script type="text/javascript" src="../library/common.js"></script>
+   <script type="text/javascript" src="../library/Timezone.js"></script>
+   <script type="text/javascript" src="../library/OptionsMenu.js"></script>
+   <script type="text/javascript" src="../library/cameraLibrary.js"></script>
+   <script type="text/javascript">
+        
+        $(window).bind('beforeunload', function() {
+        
+	        if(backFunction != null)
+	        {
+		        $("#page").find("span[data-field]").each(function(){ window.localStorage.setItem(this.id,this.innerHTML)});
+		        $("#page").find("input:text").each(function(){ window.localStorage.setItem(this.id,this.value)});
+		        $("#page").find("select").each(function(){ window.localStorage.setItem(this.id,this.value)});
+		        $("#page").find("textarea").each(function(){ window.localStorage.setItem(this.id,this.value)});
+	        }
+        
+		});
+        
+        function gotoDetails()
+        {        	
+        	//window.history.back();
+        	var id = $("#txtProductSearch").val();
+        	alert(id);
+        	window.location.href = 'materiallistscreen.html?id='+id;
+
+        }        
+        
+        var url = document.URL;
+		var value = url.split("=");
+		selectedMaterials = value[1];
+		//getCreateMaterialContext();	
+		
+         loadfunction = checkCustomerContextSalesorderListdatabase;
+          //backFunction = getCreateMaterialContext; 
+         app.initialize();
+   </script>
+   <script type="text/javascript">
+		
+		/*  $(document).ready(function()
+		{
+			 //setContactDetails();
+			 //$("#ContactsParentDiv").niceScroll();
+			 //$("#activityContacts").niceScroll();
+			$("#dtBox").DateTimePicker();
+		}); */
+		 
+	</script>
+    <script type="text/javascript" src="../plugin/Timezone.js"></script>
+    </body>
+</html>

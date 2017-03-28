@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	
+    <string name="hello">Hello World, SalesOrderLibActivity!</string>
+    <string name="app_name">SalesOrderLib</string>
+
+    <string name="SALESORDPRO_CUST_LBLCUST"> Customer  </string>
+	<string name="SALESORDPRO_WAIT"> Contacting Server... </string>
+    <string name="COMPILE_DATA">Compiling Data...</string>
+	<string name="SALESORDPRO_MATERIAL_HINT"> Search for Material </string>
+	<string name="SALESORDPRO_CUSTOMER_HINT"> Search for Customer </string>
+	<string name="SEARCH_HINT_LBL">  Search</string>
+    
+    <string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SONO">SO#</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SOVAL">Value</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_REQDAT">Req.Date</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNO">Customer#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_ICONSTS">Status</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PONO">PO#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PODATE">PO.Date</string>
+	 
+	<string name="SALESORDPRO_SORDITEM_LBL_ITEMNO">Item#</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_MATNO">Material#</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_QTY">Qty</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_UNIT">Unit</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_VALUE">Value</string> 
+	<string name="SALESORDPRO_SOLIST_TITLE">Sales Orders</string>  
+	<string name="SALESORDPRO_SOLIST_ITEM_TITLE">Items for Order</string>
+	<string name="SALESORDPRO_SOLIST_ITEM_TITLE1">- Items</string>
+	<string name="SALESORDPRO_SOLIST_ITEMDET_TITLE2">- Document &amp; Item Details</string>
+	<string name="SALESORDPRO_SOLIST_ITEMDET_TITLE1">SO#</string>
+	
+	<string name="SALESORDPRO_OVIEW_DOCNO">SO# : </string>
+	<string name="SALESORDPRO_OVIEW_SPDATA">Sold-to Party Data</string>
+	<string name="SALESORDPRO_OVIEW_SPLBL">Customer#  </string>
+	<string name="SALESORDPRO_OVIEW_SPNAME">Customer  </string>
+	<string name="SALESORDPRO_OVIEW_SPADDR">Address  </string>
+	<string name="SALESORDPRO_OVIEW_SPCOUNTRY">Country  </string>
+	<string name="SALESORDPRO_OVIEW_SPREG">Region  </string>
+	<string name="SALESORDPRO_OVIEW_SPCITY">City  </string>
+	<string name="SALESORDPRO_OVIEW_SPSTREET">Street  </string>
+	<string name="SALESORDPRO_OVIEW_SPTEL1">Tel1  </string>
+	<string name="SALESORDPRO_OVIEW_SPTEL2">Tel2  </string>
+	<string name="SALESORDPRO_OVIEW_SPEMAIL">E-Mail  </string>
+	
+	<string name="SALESORDPRO_OVIEW_CPDATA">Contact Person Data</string>
+	<string name="SALESORDPRO_OVIEW_CPLBL">Contact#  </string>
+	<string name="SALESORDPRO_OVIEW_CPNAME">Contact  </string>
+	<string name="SALESORDPRO_OVIEW_CPADDR">Address  </string>
+	<string name="SALESORDPRO_OVIEW_CPCOUNTRY">Country  </string>
+	<string name="SALESORDPRO_OVIEW_CPREGION">Region  </string>
+	<string name="SALESORDPRO_OVIEW_CPCITY">City  </string>
+	<string name="SALESORDPRO_OVIEW_CPSTREET">Street  </string>
+	<string name="SALESORDPRO_OVIEW_CPTEL1">Tel1  </string>
+	<string name="SALESORDPRO_OVIEW_CPTEL2">Tel2  </string>
+	<string name="SALESORDPRO_OVIEW_CPEMAIL">E-Mail  </string>
+	<string name="SALESORDPRO_OVIEW_CPDOCDATE">Document Date  </string>
+	<string name="SALESORDPRO_OVIEW_SDDOCCURR">Currency  </string>
+	<string name="SALESORDPRO_OVIEW_NETVALDOCCURR">Value  </string>
+	<string name="SALESORDPRO_OVIEW_ORDREJREASON">Order/Reject Reason  </string>
+	<string name="SALESORDPRO_OVIEW_DOCSTSALL">Overall Status  </string>
+	<string name="SALESORDPRO_OVIEW_REJSTSALL">Reject Status</string>
+	<string name="SALESORDPRO_OVIEW_DELVSTSALL">Delivery Status</string>
+	<string name="SALESORDPRO_OVIEW_CRDCHKSTSALL">Credit Check Status  </string>
+	<string name="SALESORDPRO_OVIEW_BLCKDSTSALL">Blocked Status  </string>
+	<string name="SALESORDPRO_OVIEW_DELBLKREASON">Delivery Block - Reason  </string>
+	<string name="SALESORDPRO_OVIEW_BILLSTATUS">Billing Status  </string>
+	<string name="SALESORDPRO_OVIEW_BILLBLKRSN">Billing Block - Reason  </string>
+	<string name="SALESORDPRO_OVIEW_STATUSSUMMARY">Status Summary</string> 
+	<string name="SALESORDPRO_OVIEW_REQDAT">Req.Date</string> 
+	
+	<string name="SALESORDPRO_OVIEW_IDDATA">Item Data</string>
+	<string name="SALESORDPRO_OVIEW_IDNO">Item#  </string>
+	<string name="SALESORDPRO_OVIEW_IDMATNO">Material#  </string>
+	<string name="SALESORDPRO_OVIEW_CUMORDQTY">Qty : </string>
+	<string name="SALESORDPRO_OVIEW_SALESUNIT">Sales Unit  </string>
+	<string name="SALESORDPRO_OVIEW_NETVALINDOC">Value  </string>
+	<string name="SALESORDPRO_OVIEW_IDSDDOCCURR">Currency  </string>
+	<string name="SALESORDPRO_OVIEW_REASONRJCN">Reason for Rejection  </string>    
+	<string name="SALESORDPRO_OVIEW_REASONBILBLK">Reason for Billing Block  </string>    
+	<string name="SALESORDPRO_OVIEW_OVERALLSTS">Item Status  </string>    
+	<string name="SALESORDPRO_OVIEW_DELVSTS">Delivery Status  </string>    
+	<string name="SALESORDPRO_OVIEW_BILLSTS">Billing Status  </string>
+	<string name="SALESORDPRO_OVIEW_PONUMB">PO#  </string>
+	
+	<string name="SALESPRO_LAUNCHMENU_CREATESO">Create Sales Order</string>  
+	<string name="SALESORDPRO_PLIST_TITLE1">Price for Material</string>
+	<string name="SALESORDPRO_PLIST_TITLE2">Select Material/s</string> 
+	<string name="SALESORDPRO_PLIST_BTNGETINFO">Get Price</string> 
+	<string name="SALESPRO_LAUNCHMENU_ADD_ITEM">Add Item</string>
+    <string name="SALESORDPRO_PLIST_LBLMAT">Material  </string>
+    
+    <string name="SORT_CUS">Sort by Customer</string>
+    <string name="SORT_SO_NO">Sort by SalesOrder No</string>
+    <string name="SORT_CUS_NO">Sort by Customer No</string>
+    
+    <string name="SALESORDPRO_MAT_DESC">Matt Desc </string>
+    <string name="SALESORDPRO_MAT_NO">Matt No </string>
+    
+    <string name="SALESORDPRO_STKLIST_ERR_DETCANT">Details can\'t be shown on selected Stock</string>
+    <string name="COMMON_DG_DELTHIS">Do you really want to delete this item?</string>
+	<string name="OK">Ok</string>
+	<string name="CANCEL">Cancel</string>	
+</resources>

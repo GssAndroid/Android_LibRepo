@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:background= "@color/tabbgcolor"	
+  	android:layout_width="60dp"
+  	android:layout_height="30dp"
+    android:editable="false"                  
+ />

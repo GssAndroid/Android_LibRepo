@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_margin="2dip"
+	android:id="@+id/sorditem_srlheader_linear"
+	android:background="@drawable/sales_item_border"	
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+	<ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="70dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"  android:id="@+id/headerl2"
+			android:background="@color/darkbgcolor" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+			android:id="@+id/sosummaryLL2"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" android:gravity="center" 
+		    android:layout_centerInParent="true">
+		</LinearLayout>
+		<!-- <LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbgcolor" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CUSTNAME"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/custNameTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_SONO" />
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/soNoTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_SOVAL"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/sovalueTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_REQDAT"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/reqDatTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CONTNAME"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/customerTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+		</LinearLayout>  -->
+		</LinearLayout> 
+	</ScrollView>
+</LinearLayout>
+
+ <LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip"
+	android:layout_below="@+id/sorditem_srlheader_linear"
+	android:id="@+id/vanstocklinear" >
+	     	
+	<!-- <EditText 
+	    android:inputType="textCapSentences"
+		style="@style/findEditSmallScreenStyle"
+		android:id="@+id/searchBEF" 
+		android:drawableLeft="@drawable/search_icon"
+		android:hint=" Search"
+		android:text="">
+	</EditText> -->
+	</LinearLayout> 
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"		
+		android:layout_height="wrap_content"
+		 android:layout_below="@id/vanstocklinear"
+		android:id="@+id/listviewlinear2" >	
+		<ListView 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:drawSelectorOnTop="false" 
+			android:id="@+id/list2" 
+			android:layout_weight="1"
+			android:cacheColorHint="#00000000" 
+			android:divider="@android:color/transparent"
+			android:dividerHeight="40.0sp"						
+			>
+		</ListView> 
+	
+</LinearLayout>
+<LinearLayout 
+			android:orientation="horizontal" android:layout_below="@+id/listviewlinear"
+			android:layout_height="wrap_content" 
+			android:id="@+id/page" 
+			android:layout_width="wrap_content" android:layout_gravity="bottom|center_vertical|center_horizontal" 
+			android:layout_alignParentBottom="true" 
+			android:layout_centerHorizontal="true" android:layout_weight="0">
+			<TextView 
+				android:id="@+id/firstpgtv" 
+				android:layout_height="40dip" 
+				android:layout_gravity="center_vertical" android:layout_width="40dip"
+				android:gravity="center_vertical" android:layout_marginRight="5dp" android:textStyle="bold" />
+			<TextView
+				android:id="@+id/prepgtv" 
+				android:layout_height="40dip" android:layout_width="40dip"  android:textStyle="bold"
+				android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+			<TextView  
+				android:id="@+id/pagetitle"
+				android:typeface="normal" android:textColor="@color/black" 
+				android:textStyle="bold" android:layout_marginRight="5dp"
+				android:layout_height="40dip" android:layout_gravity="center_vertical" 
+				android:layout_width="40dip" android:gravity="center_vertical" />
+			<TextView
+				android:id="@+id/nextpgtv"  android:textStyle="bold"
+				android:layout_height="40dip" android:layout_width="40dip" 
+				android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+			<TextView 
+				android:layout_width="40dip" 
+				android:id="@+id/lastpgtv"  android:textStyle="bold"
+				android:layout_height="40dip" android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+		</LinearLayout>	
+</RelativeLayout>

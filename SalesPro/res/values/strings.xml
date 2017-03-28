@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>
+	
+	<color name="bgcolor">#ffefe4</color>
+	<color name="darkbgcolor">#ffdac0</color>
+	
+	<color name="tabbgcolor">#A46F27</color>	
+	
+	<color name="titlebackgroundcolor">#3232CD</color> 
+    <color name="titletextcolor">#ffdac0</color> 
+    
+    <string name="app_name">SalesPro</string>
+    
+     <string name="SALESPRO_NAME">Sales Pro  </string> 
+    <string name="SALESPRO_EDITION">Edition:</string>
+    <string name="SALESPRO_DEVICE">Android </string>
+    <string name="SALESPRO_VERSION">Version 2.3</string>
+    <string name="SALESPRO_DETAIL">Integrated with </string>
+    <string name="SALESPRO_CRM">SAP CRM 7.0</string>
+    <string name="SALESPRO_ECC">SAP ECC 6.0</string>  
+    <string name="SALESPRO_REG">Android and SAP are the registered TM of the respective companies</string>  
+    
+    
+     <string name="SALESPRO_EMAIL">Send an Email  </string> 
+    <string name="SALESPRO_LAUNCHBTN_ERPCONT">Enterprise Contacts</string>
+    <string name="SALESPRO_LAUNCHBTN_CUSTCREDIT">Cust Credit Info</string>
+    <string name="SALESPRO_LAUNCHBTN_SALESORD">Sales Orders</string>
+    <string name="SALESPRO_LAUNCHBTN_PRLIST">Price List</string>
+    <string name="SALESPRO_LAUNCHBTN_QUOTATION">Quotations</string>
+    <string name="SALESPRO_LAUNCHBTN_INVENTORY">Inventory</string>  
+    <string name="SALESPRO_LAUNCHMENU_CREATESO">Create Sales Order</string>  
+    <string name="SALESPRO_LAUNCHMENU_APPOINTMENTS">Appointments</string>  
+    <string name="SALESPRO_LAUNCHMENU_ACTIVITIES">Activities</string>  
+        
+	<string name="SALESORDPRO_WAIT_TEXTS">Please wait while processing...</string>
+	<string name="SALESORDPRO_WAIT">Contacting Server...</string>
+	<string name="SALESORDPRO_ERR_CANT_EDIT">Can\'t display the selected item</string>
+	
+	<string name="SALESORDPRO_OVIEW_DOCNO">SO#   </string>
+	<string name="SALESORDPRO_OVIEW_SPDATA">Sold-to Party Data</string>
+	<string name="SALESORDPRO_OVIEW_SPLBL">Customer#  </string>
+	<string name="SALESORDPRO_OVIEW_SPNAME">Customer  </string>
+	<string name="SALESORDPRO_OVIEW_SPADDR">Address  </string>
+	<string name="SALESORDPRO_OVIEW_SPCOUNTRY">Country  </string>
+	<string name="SALESORDPRO_OVIEW_SPREG">Region   </string>
+	<string name="SALESORDPRO_OVIEW_SPCITY">City   </string>
+	<string name="SALESORDPRO_OVIEW_SPSTREET">Street   </string>
+	<string name="SALESORDPRO_OVIEW_SPTEL1">Tel1   </string>
+	<string name="SALESORDPRO_OVIEW_SPTEL2">Tel2   </string>
+	<string name="SALESORDPRO_OVIEW_SPEMAIL">E-Mail   </string>
+	
+	<string name="SALESORDPRO_OVIEW_CPDATA">Contact Person Data</string>
+	<string name="SALESORDPRO_OVIEW_CPLBL">Contact#   </string>
+	<string name="SALESORDPRO_OVIEW_CPNAME">Contact   </string>
+	<string name="SALESORDPRO_OVIEW_CPADDR">Address   </string>
+	<string name="SALESORDPRO_OVIEW_CPCOUNTRY">Country   </string>
+	<string name="SALESORDPRO_OVIEW_CPREGION">Region   </string>
+	<string name="SALESORDPRO_OVIEW_CPCITY">City   </string>
+	<string name="SALESORDPRO_OVIEW_CPSTREET">Street   </string>
+	<string name="SALESORDPRO_OVIEW_CPTEL1">Tel1   </string>
+	<string name="SALESORDPRO_OVIEW_CPTEL2">Tel2   </string>
+	<string name="SALESORDPRO_OVIEW_CPEMAIL">E-Mail   </string>
+	<string name="SALESORDPRO_OVIEW_CPDOCDATE">Document Date   </string>
+	<string name="SALESORDPRO_OVIEW_SDDOCCURR">Currency   </string>
+	<string name="SALESORDPRO_OVIEW_NETVALDOCCURR">Value   </string>
+	<string name="SALESORDPRO_OVIEW_ORDREJREASON">Order/Reject Reason   </string>
+	<string name="SALESORDPRO_OVIEW_DOCSTSALL">Overall Status   </string>
+	<string name="SALESORDPRO_OVIEW_REJSTSALL">Reject Status</string>
+	<string name="SALESORDPRO_OVIEW_DELVSTSALL">Delivery Status</string>
+	<string name="SALESORDPRO_OVIEW_CRDCHKSTSALL">Credit Check Status   </string>
+	<string name="SALESORDPRO_OVIEW_BLCKDSTSALL">Blocked Status   </string>
+	<string name="SALESORDPRO_OVIEW_DELBLKREASON">Delivery Block - Reason   </string>
+	<string name="SALESORDPRO_OVIEW_BILLSTATUS">Billing Status   </string>
+	<string name="SALESORDPRO_OVIEW_BILLBLKRSN">Billing Block - Reason   </string>
+	<string name="SALESORDPRO_OVIEW_STATUSSUMMARY">Status Summary</string> 
+	<string name="SALESORDPRO_OVIEW_REQDAT">Req.Date</string> 
+	
+	<string name="SALESORDPRO_OVIEW_IDDATA">Item Data</string>
+	<string name="SALESORDPRO_OVIEW_IDNO">Item#   </string>
+	<string name="SALESORDPRO_OVIEW_IDMATNO">Material#   </string>
+	<string name="SALESORDPRO_OVIEW_CUMORDQTY">Qty   </string>
+	<string name="SALESORDPRO_OVIEW_SALESUNIT">Sales Unit   </string>
+	<string name="SALESORDPRO_OVIEW_NETVALINDOC">Value   </string>
+	<string name="SALESORDPRO_OVIEW_IDSDDOCCURR">Currency   </string>
+	<string name="SALESORDPRO_OVIEW_REASONRJCN">Reason for Rejection   </string>    
+	<string name="SALESORDPRO_OVIEW_REASONBILBLK">Reason for Billing Block   </string>    
+	<string name="SALESORDPRO_OVIEW_OVERALLSTS">Item Status   </string>    
+	<string name="SALESORDPRO_OVIEW_DELVSTS">Delivery Status   </string>    
+	<string name="SALESORDPRO_OVIEW_BILLSTS">Billing Status   </string>    
+	
+    <string name="SALESORDPRO_CUST_NAME">Name   </string> 
+    <string name="SALESORDPRO_CUST_BLCKD">Credit Block  </string> 
+    <string name="SALESORDPRO_CUST_RISKCAT">Risk Category   </string> 
+    <string name="SALESORDPRO_CUST_CRLMT">Credit Limit   </string> 
+    <string name="SALESORDPRO_CUST_CREXPO">Credit Exposure   </string> 
+    <string name="SALESORDPRO_CUST_CRCURR">Currency   </string> 
+    <string name="SALESORDPRO_CUST_CRUSED">Credit Limit used   </string> 
+    <string name="SALESORDPRO_CUST_RATING">Rating   </string> 
+    <string name="SALESORDPRO_CUST_CUSTNO">Customer No   </string> 
+    <string name="SALESORDPRO_CUST_RISKCLSNAME">Risk Class   </string> 
+    <string name="SALESORDPRO_CUST_CITY">City   </string> 
+    <string name="SALESORDPRO_CUST_REG">Region   </string> 
+    <string name="SALESORDPRO_CUST_COUNTRY">Country   </string> 
+    <string name="SALESORDPRO_CUST_TITLE1">Credit Info for Customer</string> 
+    <string name="SALESORDPRO_CUST_TITLE2">Select Customer</string> 
+    <string name="SALESORDPRO_CUST_LBLCUST"> Customer   </string>
+    <string name="SALESORDPRO_CUST_BTNGETINFO">Get Credit Info</string> 
+    <string name="SALESORDPRO_CUSTDET_TITLE">Customer Credit Info</string> 
+    
+    <string name="SALESORDPRO_PLIST_TITLE1">Price List: Material Selection</string>  
+    <string name="SALESORDPRO_PLIST_TITLE2">Select Material/s</string> 
+    <string name="SALESORDPRO_PLIST_TITLE3">Price List Detail</string>  
+    <string name="SALESORDPRO_PLIST_BTNGETINFO">Get Price</string> 
+     <string name="SALESORDPRO_PLIST_MATNO">Material No </string>
+    <string name="SALESORDPRO_PLIST_MATDESC">Material Desc </string>
+    <string name="SALESORDPRO_PLIST_RATEAMT">Rate Amount </string>
+    <string name="SALESORDPRO_PLIST_RATEUNIT">Rate Unit </string>
+    <string name="SALESORDPRO_PLIST_CONDPRICEUNIT">Condition Price Unit </string>
+    <string name="SALESORDPRO_PLIST_CONDTNUNIT">Condition Unit </string>
+    <string name="SALESORDPRO_PLIST_KSCHL">Price Type</string>
+    <string name="SALESORDPRO_PLIST_PLTYP">Price List Type  </string>
+    <string name="SALESORDPRO_PLIST_CONDITIONTYPE">Condition Type </string>
+    <string name="SALESORDPRO_PLIST_PRICELISTYPE">PriceListType: </string>
+    <string name="SALESORDPRO_PLIST_LBLMAT">Material </string>
+    <string name="SALESORDPRO_PLIST_ERR_DETCANT">Details can\'t be shown on selected Stock</string>
+    
+    <string name="SALESORDPRO_STKLIST_TITLE1">Inventory</string>  
+    <string name="SALESORDPRO_STKLIST_TITLE2">Inventory: Material Selection</string> 
+    <string name="SALESORDPRO_STKLIST_BTNGETINV">Get Inventory</string> 
+   <string name="SALESORDPRO_STKLIST_LBLMAT">Material  </string>
+    <string name="SALESORDPRO_STKLIST_MATDESC">Material Desc</string>
+    <string name="SALESORDPRO_STKLIST_UNIT">Unit</string>
+    <string name="SALESORDPRO_STKLIST_STOCK">Stock</string>
+    <string name="SALESORDPRO_STKLIST_INTRANSIT">In-Transit</string>
+    <string name="SALESORDPRO_STKLIST_IN_INSP">Insp</string>
+    <string name="SALESORDPRO_STKLIST_MATNO">Material No</string>
+    <string name="SALESORDPRO_STKLIST_PLANT_DESC">Plant Desc</string>
+    <string name="SALESORDPRO_STKLIST_SLOCDESC">St.Loc Desc</string>
+    <string name="SALESORDPRO_STKLIST_PLANT">plant</string>
+    <string name="SALESORDPRO_STKLIST_SLOC">sloc</string>
+    <string name="SALESORDPRO_STKLISTDET_TITLE">Inventory Status</string> 
+    <string name="SALESORDPRO_STKDET_TITLE">Inventory Detail Screen</string> 
+    <string name="SALESORDPRO_STKLIST_ERR_DETCANT">Details can\'t be shown on selected Stock</string>
+    
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SONO">SO#</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SOVAL">Value</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_REQDAT">Req.Date</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNO">Customer#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_ICONSTS">Status</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PONO">PO#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PODATE">PO.Date</string>
+	 
+	<string name="SALESORDPRO_SORDITEM_LBL_ITEMNO">Item#</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_MATNO">Material#</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_QTY">Qty</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_UNIT">Unit</string> 
+	<string name="SALESORDPRO_SORDITEM_LBL_VALUE">Value</string> 
+	<string name="SALESORDPRO_SOLIST_TITLE">Sales Orders</string>  
+	<string name="SALESORDPRO_SOLIST_ITEM_TITLE">Items for Order</string>
+	<string name="SALESORDPRO_SOLIST_ITEM_TITLE1">- Items</string>
+	<string name="SALESORDPRO_SOLIST_ITEMDET_TITLE2">- Document &amp; Item Details</string>
+	<string name="SALESORDPRO_SOLIST_ITEMDET_TITLE1">SO#</string>
+	
+	<string name="detail_name">SAP details for</string>
+    <string name="CONTACTPRO_WAIT_TEXTS">Please wait while processing...</string>
+    
+    <string name="SALESPRO_FIND_LBL">Find </string>
+    <string name="SALESPRO_CONT_ID_LBL">Contact Id </string>
+    <string name="SALESPRO_CUST_ID_LBL">Customer Id </string>
+    <string name="SALESPRO_CONTACT_TIT1">Name &amp; Organization</string>
+    <string name="SALESPRO_CONTACT_TIT2">Address</string> 
+    <string name="SALESPRO_CONTACT_TIT3">Email</string> 
+    <string name="SALESPRO_CONTACT_TIT4">Phone</string>
+    <string name="SALESPRO_GENACTIVITYGALLERY">Image Gallery for Activities</string>
+    <string name="ACTSCR_LIST_TITLE">Activity List  </string>
+    <string name="ACTSCR_CRE_ACT">Create Activity</string>
+    <string name="ACTSCR_CRE_APP">Create Appointment</string>
+        
+    <string name="SCR_APP_LIST_TITLE">Appointment List  </string>    
+    <string name="SCR_CRE_APP">Create Appointment</string>
+    
+    <string name="SERVICEPRO_WAIT_TEXTS_FOR_UPDATION">Please wait updation process going on from queue process...</string>
+    <string name="SALESORDPRO_CUST_NUMB">Cust# </string>
+</resources>

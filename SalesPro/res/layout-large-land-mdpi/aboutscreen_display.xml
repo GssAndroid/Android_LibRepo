@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+   <name>Sales Pro</name>
+   <edition>Edition: </edition>
+   <device>Android </device>
+   <version>Version 2.3</version>
+   <detail> Integrated with :</detail>
+   <crm> SAP CRM 7.0</crm>
+   <ecc> SAP ECC 6.0</ecc>
+   <reg>Android and SAP are the registered TM of the respective companies</reg>
+</menu>

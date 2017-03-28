@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="fill_parent"   
+   				android:layout_height="fill_parent"
+    			android:background="@color/bgcolor"
+    			android:orientation="vertical" >
+		
+     <LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:padding="5dip"	
+				android:id="@+id/custmorsearchlinear">
+			  
+			<EditText 
+			    android:inputType="textCapSentences"
+				android:id="@+id/customerserchET"
+		        android:layout_height="wrap_content"
+		        android:hint=" Search for Customer (Optional)"
+		        android:background="@drawable/editext_border" 
+		        android:drawableLeft="@drawable/search_icon"		        
+		        android:layout_gravity="right|center_vertical" android:layout_width="300dip"/>
+			
+			<ImageButton 
+				android:id="@+id/customersearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/search1" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip" />
+		</LinearLayout>			
+		
+     <LinearLayout 
+				android:orientation="vertical"
+				android:layout_margin="2dip"
+	 			android:layout_gravity="top"
+				android:id="@+id/sorditem_srlheader_linear"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+			<!-- <LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_CUST_NUMB"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/soNoTV"  style="@style/appText" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			 -->
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CUSTNAME" />
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="18dp"
+				android:id="@+id/custNameTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+				<ImageButton 
+				android:id="@+id/showcustsearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/back1" android:layout_marginLeft="20dip" />
+			</LinearLayout>  
+       </LinearLayout>  
+<!-- 	<ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="70dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbgcolor" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CUSTNAME"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/custNameTV" style="@style/appText" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_CUST_NUMB" />
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="18dp"
+				android:id="@+id/soNoTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text=""/>
+				<TextView  
+					android:layout_height="wrap_content"  android:textSize="18dp"
+					android:id="@+id/sovalueTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text=""/>
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="18dp"
+					android:id="@+id/reqDatTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" android:textSize="18dp"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text=""/>
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="18dp"
+					android:id="@+id/customerTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+		</LinearLayout> 
+	</ScrollView> -->
+	    <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:padding="5dip"	
+			android:id="@+id/searchlinear">
+			  
+			<EditText 
+			    android:inputType="textCapSentences"
+				android:id="@+id/customerET"
+		        android:layout_height="wrap_content"
+		        android:hint="Search for Material"
+		        android:background="@drawable/editext_border" 
+		        android:drawableLeft="@drawable/search_icon"
+		        android:layout_gravity="right|center_vertical" android:layout_width="300dip"/>
+			
+			<ImageButton 
+				android:id="@+id/custsearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/search1" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip" />
+		</LinearLayout>		
+		 <RelativeLayout 
+	    		android:id="@+id/showrelativeLT" 
+				android:layout_below="@+id/searchlinear" android:layout_marginBottom="10dip" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent" android:visibility="gone" >
+		<LinearLayout 
+		    	android:orientation="horizontal"
+		    	android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+				android:id="@+id/showlinear"  android:gravity="center" android:layout_alignParentBottom="true" >
+			<Button 
+				android:id="@+id/showCustBtn"
+		        android:text="@string/SALESORDPRO_PLIST_BTNGETINFO"
+		        android:background="@drawable/btn_blue1" style="@style/innerBtnStyle"
+		        android:gravity="center"/>
+			
+			<ImageButton 
+				android:id="@+id/showsearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/back1" android:layout_marginLeft="10dip" />
+		</LinearLayout>
+	
+	    <ListView android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent" 
+				android:id="@android:id/list" 
+				android:cacheColorHint="#00000000" 		
+	        	android:layout_alignParentTop="true" android:layout_above="@+id/showlinear" />
+
+	</RelativeLayout>
+		</LinearLayout>

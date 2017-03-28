@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<TextView 
+		android:layout_marginTop="5px" android:padding="5dp"
+		android:focusable="false" 
+		android:id="@+id/name" 
+		style="@style/appText"
+		android:layout_height="wrap_content"
+		android:layout_width="170dp">
+	</TextView>	
+	<TextView 
+		android:layout_marginTop="5px" android:padding="5dp"
+		android:focusable="false" 
+		android:id="@+id/address" 
+		style="@style/appText"
+		android:layout_height="wrap_content"
+		android:layout_width="170dp">
+	</TextView>	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="340dip"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5px"
+		android:padding="5dp"
+		android:id="@+id/contactsemailll" >			
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/email1" 
+			style="@style/appText"
+			android:textSize="18dp"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:layout_width="wrap_content">
+		</TextView>	
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/email2" 
+			style="@style/appText"
+			android:textSize="18dp"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>	
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/email3" 
+			style="@style/appText"
+			android:textSize="18dp"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>	
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5px"
+		android:padding="5dp"
+		android:id="@+id/contactsphll" >			
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/ph1" 
+			style="@style/appText"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:layout_width="wrap_content">
+		</TextView>	
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/ph2" 
+			style="@style/appText"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>	
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/ph3" 
+			style="@style/appText"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>	
+		<TextView 
+			android:layout_marginTop="2px"
+			android:focusable="false" 
+			android:id="@+id/ph4" 
+			style="@style/appText"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>	
+	</LinearLayout>
+	<!-- <TextView 
+		android:layout_marginTop="5px" android:padding="5dp"
+		android:focusable="false" 
+		android:id="@+id/ph" 
+		style="@style/appText"
+		android:layout_height="wrap_content"
+		android:layout_width="120dp">
+	</TextView>	 -->
+</LinearLayout>

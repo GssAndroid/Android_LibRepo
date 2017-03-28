@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/customtitlell"
+	android:background="@color/titlebackgroundcolor"
+	>
+	<ImageView 
+		android:id="@+id/icon2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical"
+		android:background="@drawable/titleicon" />
+	<TextView 
+		android:id="@+id/myTitle2" 
+		android:layout_marginLeft="5dp"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textColor="@color/titletextcolor" 
+		android:background="@color/titlebackgroundcolor"
+		android:text="Preparing mail with GDID"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical" 
+		android:typeface="sans" android:textStyle="bold" android:textSize="21dip"/>
+</LinearLayout> 

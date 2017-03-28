@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:id="@+id/bodylayout"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/prodlinear" >
+		<!-- <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">   
+			<Button 
+				android:id="@+id/catBtn"
+		        android:text="@string/CATSEL_LBL"
+	            android:textSize="20dp" android:background="@drawable/btn_blue1" style="@style/innerBtnStyle"
+		        android:layout_marginRight="5dip" android:layout_gravity="center_vertical" android:layout_marginLeft="5dp"
+		        android:layout_height="wrap_content" android:layout_width="wrap_content" />
+			<EditText 
+			    android:inputType="textCapSentences"
+				style="@style/findEditBigScreenStyle"
+				android:id="@+id/searchBEF" 
+				android:layout_width="wrap_content"			
+				android:text="" android:layout_weight="1"
+		        android:background="@drawable/editext_border" 
+		        android:drawableLeft="@drawable/search_icon"
+				android:hint="Search">
+			</EditText>
+		</LinearLayout>	 -->	
+		<LinearLayout
+			android:orientation="horizontal"
+			android:id="@+id/headblk"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">  			
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal" android:layout_below="@id/prodlinear"
+		android:id="@+id/catSelLbl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_weight="1">  
+		<TextView
+         	style="@style/appLabel"
+       		android:id="@+id/selCatTV"		            		         
+            android:editable="false"    	           
+			android:textSize="18dp"
+            android:visibility="gone"  
+            android:layout_width = "wrap_content" android:layout_height="wrap_content"
+         	android:layout_gravity="center_vertical" android:layout_marginLeft="10dp"/>
+	</LinearLayout>
+	<HorizontalScrollView 
+	    android:id="@+id/HorizontalScrollView21" 
+        android:layout_width="wrap_content"         
+        android:layout_height="wrap_content" android:layout_below="@id/catSelLbl">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+			android:orientation="vertical" android:layout_weight="1"
+			android:layout_height="match_parent"> 
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/prodheadtbllayout">
+			</TableLayout>		
+			<ScrollView android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TableLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:id="@+id/prodvaluetbllayout">
+				</TableLayout>
+			</ScrollView>
+		</LinearLayout>
+	</HorizontalScrollView>
+	<LinearLayout 
+	     android:orientation="vertical"  android:layout_below="@+id/HorizontalScrollView21"
+	     android:layout_height= "wrap_content" 					     
+	     android:id="@+id/actscll"
+	     android:minHeight="10dip" 	
+		 android:layout_width="fill_parent">
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_gravity="bottom|center_vertical|center_horizontal" android:layout_marginTop="10dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+		<TextView 
+			android:id="@+id/firstpgtv" 
+			android:layout_height="40dip" 
+			android:layout_gravity="center_vertical" android:layout_width="40dip"
+			android:gravity="center_vertical" android:layout_marginRight="5dp" android:textStyle="bold">
+			</TextView> 
+		<TextView
+			android:id="@+id/prepgtv" 
+			android:layout_height="40dip" android:layout_width="40dip"  android:textStyle="bold"
+			android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical" >
+			</TextView> 
+		<TextView  
+			android:id="@+id/pagetitle"
+			android:typeface="normal" android:textColor="@color/black" 
+			android:textStyle="bold" android:layout_marginRight="5dp"
+			android:layout_height="40dip" android:layout_gravity="center_vertical" 
+			android:layout_width="40dip" android:gravity="center_vertical">
+			</TextView>
+		<TextView
+			android:id="@+id/nextpgtv"  android:textStyle="bold"
+			android:layout_height="40dip" android:layout_width="40dip" 
+			android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+		<TextView 
+			android:layout_width="40dip" 
+			android:id="@+id/lastpgtv"  android:textStyle="bold"
+			android:layout_height="40dip" android:layout_gravity="center_vertical" android:gravity="center_vertical" 
+			android:layout_marginRight="5dp">
+			</TextView>	
+	</LinearLayout>	
+</RelativeLayout>

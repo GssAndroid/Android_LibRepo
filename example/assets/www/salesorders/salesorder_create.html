@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+		<script src="../library/database.js"></script>
+		<script src="../library/ajax.js"></script>
+		<script src="../library/soap.js"></script>
+		<script src="../library/constants.js"></script>
+		<script src="../library/DynamicViewLibrary.js"></script>		
+		<link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../library/waitMe.css" />
+		<link rel="stylesheet" type="text/css" href="../table/css/jquery.dataTables.css">
+		<script src="../mobile/jquery.mobile.js"></script>	
+		<script src="../library/customscroll.js"></script>
+		<script src="../library/jquery.twbsPagination.js"></script>			
+		<script src="../library/waitMe.js"></script>
+		<script src="js/salesordercreatecontext.js"></script>
+		<script src="js/SOcustomersearch.js"></script>
+		<script src="js/salesorderCustomerCreate.js"></script>
+		 <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	
+    <script src="../library/customscroll.js"></script>
+    
+     <script src="../library/DateTimePicker/js/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.select.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.jqm.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.ios.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android-ics.js" type="text/javascript"></script>
+
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-hu.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-hu.js" type="text/javascript"></script>
+
+    <link href="../library/DateTimePicker/css/mobiscroll.core.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android-ics.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.ios.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.sense-ui.css" rel="stylesheet" type="text/css" />
+    
+		<script>
+			
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			// Call onDeviceReady when Cordova is loaded.
+			// At this point, the document has loaded but cordova-1.9.0.js has not.
+			// When Cordova is loaded and talking with the native device,
+			// it will call the event `deviceready`.
+			//
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			// Cordova is loaded and it is now safe to call Cordova methods
+			//
+			function onDeviceReady() {
+				// Register the event listener
+				document.addEventListener("backbutton", onBackKeyDown, false);
+			}
+
+			// Handle the back button
+			//
+			function onBackKeyDown() {	
+				window.localStorage.setItem("LastScreenId", PROD_OVERVIEW);
+			}
+		</script>
+		 <style>       
+			.cattableheader tr th{
+				display:none;
+			}
+			#socustpickcatbtn{
+				float: left;
+				margin-right: 10px;
+			}
+			#somatpickcatbtn{
+				float: left;
+				margin-right: 10px;
+			}
+			#popupPanel h1{
+				margin:5px;
+			}
+            #contentTable {
+                padding: 3px 10px 10px;
+            }
+			.ui-content{
+                padding: 3px 10px 10px;
+            }
+		 </style>   
+	</head>
+	<body>
+		<div data-role="page" id="page">
+			<div data-theme="b" data-role="header" data-position="fixed" data-tap-toggle="false" >
+				<span class="middle">  
+					<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+					<span id="screenTitle" class="title" >Sales Order Create</span>
+				</span>
+			</div>	
+			<div data-role="content"> 
+				<fieldset class="ui-grid-a;">
+					<div style="width:100%;overflow: hidden;" >	
+						<div id="ErrorDescription" style="width:90%;height:40px;border:2px solid;border-radius:4px;">
+					<!--  <a rel="external" href="#" id="backicon" data-role="button" style="display:none;width:40px;" >&nbsp;</a>  -->
+					</div>  				
+						<div class="ui-block-a" style="width:80%" id ="createcustomersearch">
+							<input type="search" class="search" name="text" id="SotxtCustomerSearch" placeholder="Search for Customer ID,Name" value="" />
+						</div>
+						<div id="socustpickcatbtn" >
+							<a href="#" data-role="button"  rel="external"  data-icon="search" style="width:40px;" onclick="customerSearch();" >&nbsp;</a>							
+						</div>
+						<div data-role="popup" id="sopopupMenu" data-theme="a" data-overlay-theme="a" >
+            				<ul data-role="listview" id="SO-dialog-form" style="min-width: 520px;" data-theme="b">                             
+            				</ul>
+						</div>
+						<div id="ContactsParentDiv" style="width:100%;height:300px;border:2px solid;border-radius:10px;padding:4px">
+					<!--  <a rel="external" href="#" id="backicon" data-role="button" style="display:none;width:40px;" >&nbsp;</a>  -->
+					</div>  <!-- end of ContactsParentDiv div tag -->	
+					</div>
+						<div class="ui-block-a" style="width:80%" id ="creatematerialsearch">
+							<input type="search" class="search" name="text" id="SotxtProductSearch" placeholder="Search for Product ID,Name" value="" />
+						</div>
+						<div id="somatpickcatbtn" >
+							<a href="#" data-role="button" data-icon="search" style="width:40px;" onclick="gotoDetails();">&nbsp;</a>							
+						</div>
+					
+										
+				</fieldset>
+					
+				<div id="materailSearchResults" style="margin-top:20px;">
+            	<ul data-role="listview" id="SolistMaterial" data-theme="b" style="display:none;">
+                
+               
+           	 	</ul>
+				</div>
+
+				
+				<div id= "tablecontent" width ="350px" float="left" padding="10px">
+					<table id="table4" style="margin-top:20px;display:none;">
+						<thead class="tableheader">
+						</thead>
+						<tbody>
+						
+						
+						</tbody> 
+				   </table>
+				</div>
+				</div>
+					<div data-role="footer" class="ui-bar" id="footer" style="display:none;" align="center"  data-position="fixed">
+						<a href="#" data-role="button" data-icon="back" data-theme="b" onclick="back();">Back</a>
+						<a href="#" data-role="button" data-theme="b" id="actionBarButton" onclick="SetFlag();">GetMaterails </a>
+	
+					</div>
+					<div data-role="footer" class="ui-bar" id="SOcreatefooter" style="display:none;" align="center"  data-position="fixed">
+						<a href="#"  data-role="button" data-theme="b" id="additem" onclick="gototNewMattScreen();">AddItem</a>
+						<a href="#" data-role="button" data-theme="b" id="getprice" onclick="SendPriceToSAP();">GetPrice </a>
+						<a href="#" data-role="button" data-theme="b" id="saveorder" onclick="SendOrderToSAP();">SaveOrder </a>
+	
+					</div>
+</div>
+				<!-- <div id= "tablecontent" width ="350px" float="left" padding="10px">
+					<table id="table4" style="margin-top:60px;">
+						<thead class="tableheader">
+						</thead>
+						<tbody>
+						<tr><td class="">undefined</td><td class="">undefined</td><td class="">M-01-2</td><td class="">M-01-2</td><td class="">undefined</td><td class="right">undefined</td><td class="">undefined</td></tr><tr><td class="">undefined</td><td class="">undefined</td><td class="">M-01-2</td><td class="">M-01-2</td><td class="">undefined</td><td class="right">undefined</td><td class="">undefined</td></tr><tr><td class="">undefined</td><td class="">undefined</td><td class="">M-03</td><td class="">M-03</td><td class="">undefined</td><td class="right">undefined</td><td class="">undefined</td></tr>
+						
+						</tbody> 
+				   </table>
+				</div>	 -->
+					
+			<!-- </div>
+		</div>   -->  
+		<script>
+		 function gotoDetails()
+	        {        	
+	        	//window.history.back();
+	        	/* var socreateflag = localStorage["CREATE_SO_FLAG"];
+	        	var additemflag = localStorage["ADDED_ITEM"]; */
+	        	/* if(socreateflag==true && additemflag==true){
+	        		 var value = $("#SotxtProductSearch").val();
+	        		 if(value.length!=0){
+	        			 $("#SotxtProductSearch").val('');
+	        		 }
+	        	} */
+	        	//var id = $("#SotxtProductSearch").val();	        		        	
+	        	//var socreateflag=true;
+	        	//alert(id);
+	        	//localStorage["SO_MATERIAL_ID"] = JSON.stringify("");
+	        	/* localStorage["MATERIAL_ID"] = id;
+	        	localStorage["ADDITEM_FLAG"] = ""; */
+	        	//localStorage["ADDED_ITEM"] = JSON.stringify("");	        	
+	        	//localStorage["SOCREATE_FLAG"] = socreateflag;
+	        	checkMaterialContextSalesorderListdatabase();
+	        	//MaterialSearch();
+	        }   
+		</script>
+		<script>
+		 function gototNewMattScreen()
+	        {    
+			 var nullStr = "";
+			 localStorage["ADDED_ITEM"] = nullStr;
+			 localStorage["ADDITEM_FLAG"] = nullStr; 
+			 var addeditemflag= true;
+			 localStorage["ADDITEM_FLAG"] = addeditemflag;      	       
+	   	//checkCustomerContextSalesorderListdatabase();
+	   	//checkContextSalesorderListdatabase();
+	   	checkAdditemSalesorderListdatabase();
+	        	//MaterialSearch();
+	        }   
+		</script>
+		<script>
+		function SetFlag(){	
+			var nullStr = "";
+			 var additemflag= true;
+			 
+			 localStorage["ADDED_ITEM"] = nullStr;
+        	localStorage["ADDED_ITEM"] = additemflag;        	
+        	getSOSelectedMaterials();
+		}
+		</script>
+		<script type="text/javascript" src="../cordova.js"></script>
+		 <script type="text/javascript" src="../plugin/SalesOrder.js"></script>
+		<script type="text/javascript" src="../library/common.js"></script>
+		 <script type="text/javascript" src="../library/SalesOrders.js"></script>		 
+		 <script type="text/javascript">		
+		 var copyflag;
+		 var qpflagstr;
+		 copyflag = localStorage["COPY_FLAG"];
+		 qpflagstr = localStorage["QPFLAG"];
+		//alert(qpflagstr);
+		 if(copyflag){
+			 loadfunction = checkCopyCustomerContextSalesorderListdatabase;
+		 }else if(qpflagstr){
+			 loadfunction = checkCustomerContextSalesorderListdatabase;			
+		 } else{
+			 $('#ErrorDescription').hide();	
+			 loadfunction = checkContextSalesorderListdatabase;	
+		 }			
+		
+			app.initialize();						
+		</script> 		
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/TaskRelativeLayout01" 
+	android:layout_width="fill_parent" 	
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent"
+	android:isScrollContainer="true">	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/contactssapidlinear" >	     
+		<TextView  
+			style="@style/appLabel"
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/devidtile" android:text="@string/SALESPRO_CONT_ID_LBL">
+		</TextView>		
+		<TextView  
+			style="@style/appText"
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/devidvalue">
+		</TextView>		
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/contactssapcusidlinear" android:layout_below="@+id/contactssapidlinear">	     
+		<TextView  
+		    style="@style/appLabel"
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/devcusidtile" android:text="@string/SALESPRO_CUST_ID_LBL">
+		</TextView>		
+		<TextView  
+			style="@style/appText"
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/devcusidvalue">
+		</TextView>		
+	</LinearLayout>
+</RelativeLayout>

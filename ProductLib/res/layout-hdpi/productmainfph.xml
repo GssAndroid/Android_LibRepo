@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/ProductOV" 
+    android:background="@color/bgcolor"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 	
+	android:layout_height="fill_parent">	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/part1" >
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" android:id="@+id/catfilter"
+			android:layout_height="wrap_content" >  
+			<!-- <Button 
+				android:id="@+id/catBtn"
+		        android:text="@string/CATSEL_LBL" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+		        android:layout_marginRight="5dip" android:layout_gravity="center_vertical" android:layout_marginLeft="5dp"
+		        android:layout_height="wrap_content" android:layout_width="wrap_content" /> -->
+		</LinearLayout>	
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dip" android:layout_below="@+id/catfilter"
+			android:id="@+id/contactslinear" android:layout_weight="0">
+			<Button 
+				android:id="@+id/catBtn"
+		        android:text="@string/CATSEL_LBL" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+		        android:textSize="12dp"
+		        android:layout_marginRight="5dip" android:layout_gravity="center_vertical" android:layout_marginLeft="5dp"
+		        android:layout_height="wrap_content" android:layout_width="110dp" />
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">  
+				<EditText 
+				    android:inputType="textCapSentences"
+				    android:layout_width="fill_parent"
+					android:minHeight="50dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/searchBEF" 
+					android:text=""
+					android:scrollbarStyle="insideOverlay"
+			        android:background="@drawable/editext_border" 
+					android:drawableLeft="@drawable/search_icon"
+					android:hint="@string/SEARCH_HINT_LBL" android:layout_gravity="center_vertical|center_horizontal">
+				</EditText>
+			</LinearLayout>
+		</LinearLayout>  
+		<LinearLayout
+			android:orientation="horizontal" android:layout_below="@+id/contactslinear"
+			android:id="@+id/catSelLbl" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="0">  
+			<TextView
+	         	style="@style/appLabel"
+	       		android:id="@+id/selCatTV"		            		         
+	            android:editable="false"    
+	            android:visibility="gone"  
+	            android:layout_width = "wrap_content" android:layout_height="wrap_content"
+	         	android:layout_gravity="center_vertical" android:layout_marginLeft="10dp"/>
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_below="@+id/catSelLbl"
+			android:id="@+id/listviewlinear" android:layout_weight="2">	
+			<ListView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/contactslinear"
+				android:drawSelectorOnTop="false" 
+			    android:id="@android:id/list" 
+				android:cacheColorHint="#00000000" 			
+				android:layout_marginTop="2px" >
+			</ListView>
+		</LinearLayout>	
+		<LinearLayout 
+			android:orientation="horizontal" android:layout_below="@+id/listviewlinear"
+			android:layout_height="wrap_content" 
+			android:id="@+id/page" 
+			android:layout_width="wrap_content" android:layout_gravity="bottom|center_vertical|center_horizontal" 
+			android:layout_alignParentBottom="true" 
+			android:layout_centerHorizontal="true" android:layout_weight="0">
+			<TextView 
+				android:id="@+id/firstpgtv" 
+				android:layout_height="40dip" 
+				android:layout_gravity="center_vertical" android:layout_width="40dip"
+				android:gravity="center_vertical" android:layout_marginRight="5dp" android:textStyle="bold" />
+			<TextView
+				android:id="@+id/prepgtv" 
+				android:layout_height="40dip" android:layout_width="40dip"  android:textStyle="bold"
+				android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+			<TextView  
+				android:id="@+id/pagetitle"
+				android:typeface="normal" android:textColor="@color/black" 
+				android:textStyle="bold" android:layout_marginRight="5dp"
+				android:layout_height="40dip" android:layout_gravity="center_vertical" 
+				android:layout_width="40dip" android:gravity="center_vertical" />
+			<TextView
+				android:id="@+id/nextpgtv"  android:textStyle="bold"
+				android:layout_height="40dip" android:layout_width="40dip" 
+				android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+			<TextView 
+				android:layout_width="40dip" 
+				android:id="@+id/lastpgtv"  android:textStyle="bold"
+				android:layout_height="40dip" android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+		</LinearLayout>	 
+	</LinearLayout>
+</RelativeLayout>

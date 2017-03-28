@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/TaskRelativeLayout01" 
+    android:background="@color/bgcolor"
+	android:layout_width="fill_parent" 	
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:isScrollContainer="true">	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/contactslinear" >	
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">     
+			<!-- <TextView  
+				style="@style/appLabel"
+				android:editable="false"
+				android:padding="5dip"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textSize="20dp"
+				android:id="@+id/searchLbl" android:text="@string/SALESPRO_FIND_LBL" android:layout_gravity="center_vertical|center_horizontal">
+			</TextView>		
+			<EditText 
+			    android:inputType="textCapSentences"
+				style="@style/findEditBigScreenStyle"
+				android:id="@+id/searchBEF" android:layout_gravity="center_vertical|center_horizontal">
+			</EditText> -->
+			<EditText 
+			    android:inputType="textCapSentences"
+				style="@style/findEditBigScreenStyle"
+				android:id="@+id/searchBEF" 
+				android:layout_marginRight="10dp"
+				android:text=""
+				android:drawableLeft="@drawable/search_icon"
+				android:hint=" Search">
+			</EditText>
+		</LinearLayout>
+		<ImageView 
+			android:id="@+id/addimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:background="@drawable/add" android:layout_gravity="center_vertical|center_horizontal"/>
+	</LinearLayout>
+	<HorizontalScrollView 
+	    android:id="@+id/HorizontalScrollView01" 
+        android:layout_width="match_parent"         
+        android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+			android:orientation="vertical" 
+			android:layout_weight="1"
+			android:layout_height="fill_parent"> 
+			<TableLayout 
+			    android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/vstckmaintbllayout2">
+				<TableRow style="@style/HeaderRow" android:layout_height="wrap_content" android:layout_width="match_parent">
+			         <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV1"
+			            android:text="@string/SALESPRO_CONTACT_TIT1"
+			            android:editable="false"
+			            android:textStyle="bold"
+			            android:textSize="18dp"
+			            android:padding="5dp" android:gravity="left"
+			            android:clickable="true"
+			            android:layout_width = "340dip"
+			         />
+			         <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV7"
+			            android:text="@string/SALESPRO_CONTACT_TIT2"
+			            android:textStyle="bold"
+			            android:editable="false"
+			            android:padding="5dp" android:gravity="left"
+			            android:textSize="18dp"
+			            android:clickable="true"
+			            android:layout_width = "350dip"
+			          />
+			         <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV7"
+			            android:text="@string/SALESPRO_CONTACT_TIT3"
+			            android:textStyle="bold"
+			            android:editable="false"
+			            android:padding="5dp" android:gravity="left"
+			            android:clickable="true"
+			            android:textSize="18dp"
+			            android:layout_width = "350dip"
+			          />
+			        <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV2"
+			            android:text="@string/SALESPRO_CONTACT_TIT4"
+			            android:editable="false"
+			            android:padding="5dp" android:gravity="left"
+			            android:textStyle="bold"
+			            android:textSize="18dp"
+			            android:clickable="true"
+			            android:layout_width = "220dp"
+			         />
+			    </TableRow>
+			</TableLayout>
+			<ListView 
+				android:layout_width="match_parent" 
+				android:layout_height="fill_parent"
+				android:layout_below="@+id/contactslinear"
+				android:drawSelectorOnTop="false" 
+			    android:layout_weight="1"
+				android:cacheColorHint="#00000000" 	
+				android:id="@android:id/list" 
+				android:layout_marginTop="2px" >
+			</ListView>
+		</LinearLayout>
+	</HorizontalScrollView> 
+</LinearLayout>

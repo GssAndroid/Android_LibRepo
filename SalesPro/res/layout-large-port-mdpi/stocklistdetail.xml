@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+ <LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip"
+	android:id="@+id/vanstocklinear" >
+	     	
+	<EditText 
+	    android:inputType="textCapSentences"
+		style="@style/findEditBigScreenStyle"
+		android:id="@+id/searchBEF" 
+        android:background="@drawable/editext_border" 
+        android:drawableLeft="@drawable/search_icon"
+		android:hint="  Search"
+		android:layout_marginRight="10dp"
+		android:text="">
+	</EditText>
+</LinearLayout>
+
+
+<HorizontalScrollView android:id="@+id/HorizontalScrollView21" 
+                   android:layout_width="wrap_content"         
+                   android:layout_height="wrap_content">
+		
+		<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:layout_weight="1"
+		android:layout_height="match_parent"> 
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/stocklisttbllayout1" >
+			<TableRow style="@style/HeaderRow">
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV1"
+		            android:text="Mat. Desc."
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "180dip" 
+		            android:textSize="18dp"
+		         />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV2"
+		            android:text="UoM"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "80dip"
+		            android:textSize="18dp"
+		         />
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV3"
+		            android:text="Stock"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "100dip"
+		            android:textSize="18dp"
+		          />
+		        <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV4"
+		            android:text="In-Transit"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "120dip"
+		            android:textSize="18dp"
+		         />         
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV5"
+		            android:text="In Insp."
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "100dip"
+		            android:textSize="18dp"
+		         />      
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV6"
+		            android:text="Mat. No"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "120dip"
+		            android:textSize="18dp"
+		         />           
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV7"
+		            android:text="Plant Desc"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		         />           
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV8"
+		            android:text="SLoc Desc"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "200dip"
+		            android:textSize="18dp"
+		         />                     
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV9"
+		            android:text="Plant"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "100dip"
+		            android:textSize="18dp"
+		         />    
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV10"
+		            android:text="SLoc"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "100dip"
+		            android:textSize="18dp"
+		         />        
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/stocklisttbllayout2">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+	</HorizontalScrollView>
+
+</LinearLayout>

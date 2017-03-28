@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<ImageView 
+		android:layout_width="wrap_content" 
+		android:id="@+id/info" 
+		android:layout_height="wrap_content" 
+		android:src="@drawable/info" 
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_marginRight="10dip" android:layout_marginTop="10dip">
+	</ImageView>
+<RelativeLayout android:layout_centerInParent="true" android:layout_height="wrap_content" android:layout_width="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainbtnlayout1">	
+    
+    <Button
+	android:id="@+id/contactsBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_ERPCONT" android:layout_marginLeft="2dip" android:layout_marginRight="6dip" />
+	
+	<Button
+	android:id="@+id/salesordBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_SALESORD" android:layout_marginRight="2dip" />
+
+</LinearLayout>  
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainbtnlayout2"
+    android:layout_below="@+id/mainbtnlayout1"
+    android:paddingTop="20px">	
+    
+	<Button
+	android:id="@+id/appointmentsBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHMENU_APPOINTMENTS" android:layout_marginLeft="2dip" android:layout_marginRight="6dip" />
+	
+	<Button
+	android:id="@+id/customerBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_CUSTCREDIT" android:layout_marginRight="2dip" />
+
+</LinearLayout>  
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mainbtnlayout2"
+    android:id="@+id/mainbtnlayout3"
+    android:paddingTop="20px">	
+    
+	<Button
+	android:id="@+id/activitiesBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHMENU_ACTIVITIES" android:layout_marginLeft="2dip" android:layout_marginRight="6dip" />
+	
+	<Button
+	android:id="@+id/pricelistBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_PRLIST" android:layout_marginRight="2dip" />
+
+</LinearLayout>  
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mainbtnlayout3"
+    android:id="@+id/mainbtnlayout4"
+    android:paddingTop="20px">	
+    
+	<Button
+	android:id="@+id/quotationBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_QUOTATION" android:layout_marginLeft="2dip" android:layout_marginRight="6dip" />
+	
+	<Button
+	android:id="@+id/inventoryBtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	android:text="@string/SALESPRO_LAUNCHBTN_INVENTORY" android:layout_marginRight="2dip" />
+
+</LinearLayout>  
+</RelativeLayout>
+</RelativeLayout>

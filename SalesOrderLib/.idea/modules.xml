@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CalendarLib/CalendarLib.iml" filepath="$PROJECT_DIR$/../CalendarLib/CalendarLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ContactLib/ContactLib.iml" filepath="$PROJECT_DIR$/../ContactLib/ContactLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ContactsListCloneLib/ContactsListCloneLib.iml" filepath="$PROJECT_DIR$/../ContactsListCloneLib/ContactsListCloneLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SalesOrderLib.iml" filepath="$PROJECT_DIR$/SalesOrderLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SalesPro/SalesPro.iml" filepath="$PROJECT_DIR$/../SalesPro/SalesPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SalesProCustActivityLib/SalesProCustActivityLib.iml" filepath="$PROJECT_DIR$/../SalesProCustActivityLib/SalesProCustActivityLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SapLibActivity/SapLibActivity.iml" filepath="$PROJECT_DIR$/../SapLibActivity/SapLibActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SapLibSoap/SapLibSoap.iml" filepath="$PROJECT_DIR$/../SapLibSoap/SapLibSoap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SapQueueProcessor/SapQueueProcessor.iml" filepath="$PROJECT_DIR$/../SapQueueProcessor/SapQueueProcessor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SapQueueProcessorHelper/SapQueueProcessorHelper.iml" filepath="$PROJECT_DIR$/../SapQueueProcessorHelper/SapQueueProcessorHelper.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+		<script src="../library/database.js"></script>
+		<script src="../library/ajax.js"></script>
+		<script src="../library/soap.js"></script>
+		<script src="../library/constants.js"></script>
+		<script src="../library/DynamicViewLibrary.js"></script>		
+		<link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../library/waitMe.css" />
+		<link rel="stylesheet" type="text/css" href="../table/css/jquery.dataTables.css">
+		<script src="../mobile/jquery.mobile.js"></script>	
+		<script src="../library/customscroll.js"></script>
+		<script src="../library/jquery.twbsPagination.js"></script>	
+		<script src="../library/waitMe.js"></script>		
+		<script src="js/itemdetailscreen.js"></script>
+		 <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	
+    <script src="../library/customscroll.js"></script>
+    
+     <script src="../library/DateTimePicker/js/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.select.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.jqm.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.ios.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android-ics.js" type="text/javascript"></script>
+
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.core-hu.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-de.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/i18n/mobiscroll.datetime-hu.js" type="text/javascript"></script>
+
+    <link href="../library/DateTimePicker/css/mobiscroll.core.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android-ics.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.ios.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.sense-ui.css" rel="stylesheet" type="text/css" />
+		<script>
+			
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			// Call onDeviceReady when Cordova is loaded.
+			// At this point, the document has loaded but cordova-1.9.0.js has not.
+			// When Cordova is loaded and talking with the native device,
+			// it will call the event `deviceready`.
+			//
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			// Cordova is loaded and it is now safe to call Cordova methods
+			//
+			function onDeviceReady() {
+				// Register the event listener
+				document.addEventListener("backbutton", onBackKeyDown, false);
+			}
+
+			// Handle the back button
+			//
+			function onBackKeyDown() {	
+				window.localStorage.setItem("LastScreenId", PROD_OVERVIEW);
+			}
+		</script>
+		 <style>       
+			.cattableheader tr th{
+				display:none;
+			}
+			#socustpickcatbtn{
+				float: left;
+				margin-right: 10px;
+			}
+			#somatpickcatbtn{
+				float: left;
+				margin-right: 10px;
+			}
+			#popupPanel h1{
+				margin:5px;
+			}
+            #contentTable {
+                padding: 3px 10px 10px;
+            }
+			.ui-content{
+                padding: 3px 10px 10px;
+            }
+		 </style>   
+	</head>
+	<body>
+	<div data-role="page" id="page">
+			<div data-theme="b" data-role="header" data-position="fixed" data-tap-toggle="false" >
+				<span class="middle">  
+					<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+					<span id="screenTitle" class="title" >Item Detail Screen</span>
+				</span>
+			</div>	
+		<div style="width:100%;"> 
+			
+	<div style="float:left; width:50%;">
+	<div id="CustomerParentDiv" style="width:98%;height:100px;border:2px solid;border-radius:10px;padding:4px"">
+					<div style="margin-left:5px;padding-left:5px;">
+	
+					<div class="ui-block-a" style="width:30%">
+    				<!-- <label id="txtCustomerValue" >Customers/Contacts</label>  -->
+    				</div>
+    	
+    				<div class="ui-block-b" style="width:70%;">
+    				<div class="ui-block-a" style="width:20%;">
+    				<!-- <a rel="external" href="#" id="deleteIconContacts" onclick="deleteActivityContacts()" data-role="button" data-icon="delete" style="display:none;width:40px;" >&nbsp;</a> -->
+    				<span> </span>
+    				</div>
+    				<div class="ui-block-b" style="width:60%;">
+    				<span> </span>
+    				<!-- <a href="../contacts/find.html" rel="external" data-role="button" data-icon="search" id="btnPickContact">Pick Your Contacts</a> -->
+    				</div>
+    				</div>
+    				</div>
+					</div>  <!-- end of ContactsParentDiv div tag -->	
+				<!-- <div id= "itemtablecontent" style="width:90%;height:100px;"> -->
+				<div class='content' data-role='content' id="contentTable">
+					<table id="table5" style="margin-top:20px;">
+						<thead class="tableheader">
+						</thead>
+						<tbody>
+					<!-- <tr><td class="">abd </td><td class=""> dd</td><td class=""></td><td class="right">ff</td><td class=""></td><td class="right"></td><td class=""></td></tr> -->
+					
+						</tbody> 
+				   </table>
+				</div>
+	</div>
+	<div style="float:right; width:50%; ">
+ 	<div id="HeadertDiv" style="width:100%;height:350px;border:2px solid;border-radius:10px;overflow:scroll;padding:4px">
+ 		<!-- <ul data-role="listview">
+      <li><a href="#">List Item</a></li>
+      <li><a href="#">List Item</a></li>
+      <li><a href="#">List Item</a></li>
+    	</ul> -->
+ 	</div>
+ 	<div id="ItemsDiv" style="width:100%;height:400px;border:2px solid;border-radius:10px;overflow:scroll;padding:4px"">
+ 		<!-- <ul data-role="listview">
+      <li><a href="#">Item details</a></li>
+      <li><a href="#">List Item</a></li>
+      <li><a href="#">List Item</a></li>
+    </ul> -->
+ 	</div>
+	</div>
+ 
+	</div>	
+	</div>		
+		<script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../library/common.js"></script>
+	<script type="text/javascript">
+				loadfunction = checkSummaryContextSalesorderListdatabase;				
+				app.initialize();
+		</script>	
+	</body>
+</html>

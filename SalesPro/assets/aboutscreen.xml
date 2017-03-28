@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+   <name>SalesPro-20140809.apk </name>
+   <edition>Edition </edition>
+   <device>Android </device>
+   <version>Android Version: </version>
+   <detail> Integrated with :</detail>
+   <devicetype> Device Type: </devicetype>
+ <!--   <server> CW-MAS02</server> -->
+   <reg>Android and SAP are the registered TM of the respective companies</reg>
+   <SOAP_SERVICE_URL>http://75.99.152.10:8050/sap/bc/srt/rfc/sap/z_gssmwfm_hndl_evntrqst00/110/z_gssmwfm_hndl_evntrqst00/z_gssmwfm_hndl_evntrqst00</SOAP_SERVICE_URL>
+   <SOAP_ACTION_URL>http://75.99.152.10:8050/sap/bc/srt/wsdl/bndg_E0A8AEE275F3AEF1AE7900188B47B426/wsdl11/allinone/ws_policy/document?sap-client=110</SOAP_ACTION_URL>
+   <SOAP_TYPE_FNAME>ZGssmwfmHndlEvntrqst00 </SOAP_TYPE_FNAME>
+   <SOAP_SERVICE_NAMESPACE>urn:sap-com:document:sap:soap:functions:mc-style</SOAP_SERVICE_NAMESPACE>
+   <SOAP_INPUTPARAM_NAME> DpistInpt</SOAP_INPUTPARAM_NAME>
+   <SOAP_NOTATION_DELIMITER> NOTATION:ZML:VERSION:0:DELIMITER:[.]</SOAP_NOTATION_DELIMITER>
+</menu>

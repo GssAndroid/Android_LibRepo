@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+	<script src="../library/database.js"></script>
+    <script src="../library/ajax.js"></script>
+    <script src="../library/gallery.js"></script>
+  
+	<link rel="stylesheet" type="text/css" href="../library/Gallery/css/style.css" />
+   <link rel="stylesheet" href="../library/waitMe.css" />
+	 <script src="../library/waitMe.js"></script>
+    
+    <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	
+    <script src="../library/customscroll.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+
+    function checkDayLightSavings() {
+      navigator.globalization.isDayLightSavingsTime(
+        new Date(),
+        function (date) {alert('dst: ' + date.dst + '\n');},
+        function () {alert('Error getting names\n');}
+      );
+    }
+
+    </script>
+    
+    <script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-1.9.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    	console.log('hi i am bala');
+    }
+
+    </script>
+    
+    
+</head>
+
+<body>
+
+
+
+<div data-role="page" id="page">
+
+
+<div data-theme="b" data-role="header" data-position="fixed" >
+	<span class="middle">  
+		<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+		<span  id="screenTitle">Gallery</span>
+	</span>
+	<a href="#"  onclick="refreshScreen([])" class="ui-btn-right" data-role="button" data-icon="refresh" data-iconpos="notext" data-mini="true" data-inline="true">Refresh</a>
+</div>
+
+<div data-role="content">  
+
+<div class="sp-wrap">
+</div>
+	
+	
+</div>
+
+</div>
+    
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../library/common.js"></script>    
+    <script type="text/javascript" src="../library/Timezone.js"></script>
+    <script type="text/javascript" src="../library/OptionsMenu.js"></script>
+    <script type="text/javascript" src="../library/cameraLibrary.js"></script>
+        <script type="text/javascript">
+        // loadfunction = openGallery();
+        /* pathGallery = window.localStorage.getItem("gallerypath");
+          app.initialize(); */
+        </script>
+		<script type="text/javascript" src="../library/Gallery/js/gallery.js"></script> 
+        <script type="text/javascript" src="../plugin/Timezone.js"></script>
+     </body>
+<html>

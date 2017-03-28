@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="salesprocustactivitylib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SalesProCustActivityLib/bin/salesprocustactivitylib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

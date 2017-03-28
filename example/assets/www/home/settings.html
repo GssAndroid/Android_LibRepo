@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+        <script src="../library/ajax.js"></script>
+        <script src="../library/soap.js"></script>
+        <script src="../library/view.js"></script>
+        <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../mobile/jquery.mobile.js"></script>
+       
+        
+    </head>
+    
+    
+    
+    <script>
+    
+    function changeDiagnostics(value)
+    {
+    	window.localStorage.setItem("diagnostics",value);
+    }
+    
+    </script>
+    
+    <body>
+        
+        
+        
+        <div data-role="page" id="page">
+            
+            
+            <div data-theme="b" data-role="header" data-position="fixed" >
+                <span class="middle">
+                    <img border="0"  onclick="goBack();" src="../img/icon.png" class="middle" />
+                 	<span  id="screenTitle">Settings</span>
+                 </span>
+                
+             </div>
+            
+             <div data-role="content">  
+             
+             
+             <div data-role="fieldcontain">
+				<label for="diagnostics">Enable Diagnostics:</label>
+				<select name="diagnostics" id="diagnostics" data-role="slider" onchange="changeDiagnostics(this.value)">
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select> 
+			</div>
+             
+             
+			</div>
+		
+		
+         </div>
+        
+        <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../library/common.js"></script>
+        <script>
+        
+        if(window.localStorage.getItem("diagnostics") != null && window.localStorage.getItem("diagnostics") != "")
+        	$("#diagnostics").val(window.localStorage.getItem("diagnostics"));
+        
+        
+        $('select').slider('refresh');
+        
+        </script>
+      
+    </body>
+    <html>

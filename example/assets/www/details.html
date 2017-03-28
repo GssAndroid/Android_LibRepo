@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+	<script src="library/database.js"></script>
+   	<script src="library/ajax.js"></script>
+    <script src="library/soap.js"></script>
+    <script src="library/constants.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/context.js"></script>
+    <link rel="stylesheet" href="mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<script src="mobile/jquery.mobile.js"></script>
+  	<style>
+  		.ui-input-text{
+    		background-color: gray;
+		}	
+  	</style>
+  	
+</head>
+
+<body>
+
+<div data-role="page" id="page">
+
+<div data-theme="b" data-role="header" data-position="fixed" >
+	<span class="middle">  
+		<img border="0"  src="img/icon.png" class="middle" onclick="goBack();"/>
+		<span  id="screenTitle">Credit Info For Customer</span>
+	</span>
+</div>
+
+<div data-role="content">  
+
+<div id="divDunamicUI" >
+      	
+      	 
+</div>
+    
+</div>
+   
+   <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="library/common.js"></script>
+        <script type="text/javascript">
+        loadfunction = customerDetails;
+            app.initialize();
+        </script>
+  </body>
+</html>

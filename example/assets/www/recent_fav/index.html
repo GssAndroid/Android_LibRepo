@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+	<script src="../library/database.js"></script>
+    <script src="../library/ajax.js"></script>
+    <script src="../library/soap.js"></script>
+    <script src="../library/constants.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	 <link rel="stylesheet" href="../library/waitMe.css" />
+	  <link rel="stylesheet" type="text/css" href="../table/css/jquery.dataTables.css">
+	 <script src="../library/waitMe.js"></script>
+	 <script type="text/javascript" language="javascript" src="../table/js/jquery.dataTables.js"></script>
+	 
+    <script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-1.9.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+   
+    </script>
+    
+    
+</head>
+
+<body>
+
+
+
+<div data-role="page" id="page">
+
+
+<div data-theme="b" data-role="header" data-position="fixed" >
+	<span class="middle">  
+		<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+		<span  id="screenTitle">Recently Visited</span>
+	</span>
+</div>
+
+<div data-role="content">
+
+<div id="recentActivity">
+	<div id="recentActivityResults" style="margin-top:20px;" >
+	
+		<ul data-role="listview" id="listrecentActivity" data-theme="g" >
+		</ul>
+	
+	
+	</div>
+</div>
+    
+ 
+</div>
+
+
+
+</div>
+    
+    <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../library/common.js"></script>
+        <script type="text/javascript">
+        loadfunction = getRecentActivities;
+            app.initialize();
+        </script>
+     </body>
+<html>

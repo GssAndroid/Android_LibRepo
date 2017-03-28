@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+	
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip"
+	android:id="@+id/taskmainlinear1" >  
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<!-- <TextView 
+			style="@style/appLabel" 
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/searchLbl" 
+			android:textSize="20dp"
+			android:text="@string/FIND_LBL" android:layout_gravity="center_vertical|center_horizontal">
+		</TextView> -->
+		
+		<EditText 
+		    android:inputType="textCapSentences"
+			style="@style/findEditBigScreenStyle"
+			android:id="@+id/searchBEF" 
+			android:drawableLeft="@drawable/search_icon"
+			android:hint=" Search"
+			android:layout_marginRight="10dp"
+			android:text="" android:layout_gravity="center_vertical|center_horizontal">
+		</EditText>
+	</LinearLayout>
+	<ImageView 
+		android:id="@+id/addimg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:background="@drawable/add" android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+<HorizontalScrollView android:id="@+id/HorizontalScrollView01" 
+                   android:layout_width="wrap_content"         
+                   android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_weight="1"
+		android:layout_height="fill_parent"> 
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/vstckmaintbllayout2">
+			<TableRow style="@style/HeaderRow">
+
+		         <TextView
+		             android:id="@+id/TableHeaderTV1"
+		             style="@style/HeaderText"
+		             android:layout_width="80dip"
+		             android:layout_height="match_parent"
+		             android:clickable="true"
+		             android:editable="false"
+		             android:text="     "
+		             android:textSize="18dp"
+		             android:textStyle="bold" />
+
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV7"
+		            android:text="@string/ACTSCR_LBLSTARTDATE"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		            android:textSize="18dp"
+		          />
+
+		         <TextView
+		             android:id="@+id/TableHeaderTV2"
+		             style="@style/HeaderText"
+		             android:layout_width="190dip"
+		             android:clickable="true"
+		             android:editable="false"
+		             android:text="@string/ACTSCR_LBLCUSTNAME"
+		             android:textSize="18dp"
+		             android:textStyle="bold" />
+
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV3"
+		            android:text="@string/ACTSCR_BRIEF"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "190dip"
+		            android:textSize="18dp"
+		          />
+		        <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV4"
+		            android:text="@string/ACTSCR_ACTORD"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		         />         
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV5"
+		            android:text="@string/ACTSCR_LBLCONTCTNAME"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"		            
+		            android:layout_width = "360dip"
+		            android:textSize="18dp"
+		         />      
+		        <!-- <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV6"
+		            android:text="  "
+		            android:textStyle="bold"
+		            android:editable="false"		                        
+		            android:layout_width = "350dip"		                        
+		            android:textSize="18dp"
+		         /> -->    
+		         <!--     
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV7"
+		            android:text="Batch"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="false"
+		            android:layout_width = "80dip"
+		            android:textSize="18dp"
+		         />              
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV8"
+		            android:text="Plant"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="false"
+		            android:layout_width = "100dip"
+		            android:textSize="18dp"
+		         />        
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV9"
+		            android:text="Store Loc"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="false"
+		            android:layout_width = "140dip"
+		            android:textSize="18dp"
+		         />      -->
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/taskmainscrollview">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/taskmaintbllayout3">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+	</HorizontalScrollView>
+</LinearLayout>

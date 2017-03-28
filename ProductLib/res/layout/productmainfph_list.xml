@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@layout/list_item_bg"
+    android:id="@+id/llitembg"
+    android:layout_margin="5dip" >
+	<LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_marginLeft="5dip"
+	     android:layout_marginTop="5dip"
+	     android:orientation="horizontal"> 
+	     <!-- <CheckBox android:id="@+id/checkbx"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /> -->
+	     <ImageView 
+			android:id="@+id/imgId"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="5dp"
+			android:layout_gravity="center_vertical|center_horizontal"
+			/>	            
+	     <LinearLayout 
+		    android:layout_width="170dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" android:layout_weight="1">  
+			<TableLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:visibility="gone"
+			    android:id="@+id/tbllayout1" >
+			</TableLayout>
+		     <!-- <TextView 
+				android:typeface="sans" 
+				android:focusable="false" 
+				android:id="@+id/pdesc" 
+				style="@style/appLabel"
+				android:layout_gravity="left"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" /> 
+			 <TextView 
+				android:focusable="false" 
+				android:id="@+id/pidnprice" 
+				style="@style/appText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />       
+			 <TextView 
+				android:focusable="false" 
+				android:id="@+id/text1" 
+				style="@style/appText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" /> -->
+		</LinearLayout>
+		<ImageView 
+			android:id="@+id/arrowimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="10dip"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/arrow"/>
+	</LinearLayout>
+</LinearLayout>

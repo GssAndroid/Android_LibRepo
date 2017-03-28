@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgcolor"
+	android:id="@+id/bodylayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/part1" >
+		<LinearLayout
+			android:orientation="vertical"
+	    	android:layout_weight="1"
+			android:layout_width="fill_parent"			
+			android:layout_height="wrap_content" >
+		<!-- <ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none">
+	   <RelativeLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"			
+			android:layout_height="wrap_content" > 	 -->
+	<RelativeLayout 
+		android:id="@+id/menuTV"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" android:layout_marginTop="3dip">
+		<!-- <LinearLayout 
+			android:id="@+id/menuTV1"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" android:gravity="center" 
+		    android:layout_centerInParent="true">
+			<TextView 
+				android:id="@+id/summaryTV" 
+			    android:textSize="18dp"
+		        android:layout_height="wrap_content" android:background="@drawable/tvborder_sel"
+		        android:layout_width="wrap_content" style="@style/appLabel"
+				android:text="Summary" android:padding="5dp"/>
+			<TextView 		    
+			    android:id="@+id/imagesTV" 
+			    android:textSize="18dp"
+			    android:layout_width="wrap_content" android:background="@drawable/tvborder_unsel"
+			    android:layout_height="wrap_content" style="@style/appLabel"
+				android:text="Images" 
+			    android:layout_toRightOf="@+id/summaryTV" android:padding="5dp"/>
+			<TextView 
+			    android:id="@+id/detailsTV" android:background="@drawable/tvborder_unsel"
+			    android:layout_width="wrap_content" style="@style/appLabel"
+			    android:layout_height="wrap_content"
+				android:text="Details" 
+			    android:textSize="18dp"
+			    android:layout_toRightOf="@+id/imagesTV" android:padding="5dp"/>
+			<TextView 
+			    android:id="@+id/scartTV" android:background="@drawable/tvborder_unsel"
+			    android:layout_width="wrap_content" style="@style/appLabel"
+			    android:layout_height="wrap_content"
+				android:text="Shopping Cart" 
+			    android:textSize="18dp"
+			    android:layout_toRightOf="@+id/detailsTV" android:padding="5dp"/>
+		</LinearLayout> -->
+		<LinearLayout 
+			android:id="@+id/menuTVLL"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" android:gravity="center" 
+		    android:layout_centerInParent="true">
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/summaryll" android:layout_below="@id/menuTV" 
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >	
+		<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp">
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" > 
+				<LinearLayout
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:layout_marginLeft="5dip"
+				     android:layout_marginTop="5dip"
+				     android:orientation="vertical"> 
+				     <!-- <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/descll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >
+						<TextView  
+							android:editable="false"
+							style="@style/appText" 
+							android:layout_marginBottom="5dp"
+							android:padding="5dip" android:textSize="18dp"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+							android:layout_gravity="center_vertical|center_horizontal"
+							android:id="@+id/descVal" >
+						</TextView>
+					</LinearLayout> -->
+				    <!-- <ImageView 
+						android:id="@+id/imgVal"
+						android:layout_width="160dp"
+						android:layout_height="160dp"
+						/> -->	
+					<!-- <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/descll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="150dp"
+							android:id="@+id/desc" 
+			   				android:textSize="18dp"
+							android:text="@string/MAINSCR_PROD_DETAILS_PRODESC"
+							style="@style/appLabel">
+						</TextView>
+					</LinearLayout>  -->
+					<!-- <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/pnoll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="150dp"
+							android:id="@+id/pno" android:textSize="18dp"
+							android:text="@string/MAINSCR_PROD_DETAILS_PRONO"
+							style="@style/appLabel">
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText" android:textSize="18dp"
+							android:padding="5dip"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/pnoVal" >
+						</TextView>
+					</LinearLayout>  -->
+					<!-- <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/pricell" 
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >	
+						<TextView  
+							android:layout_height="wrap_content"
+							android:layout_width="150dp"
+							android:id="@+id/price" android:textSize="18dp"
+							android:text="@string/MAINSCR_PROD_DETAILS_PROPRICE"
+							style="@style/appLabel">
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText" android:textSize="18dp"
+							android:padding="5dip"
+							android:layout_marginLeft="5dp"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/priceVal" >
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText" android:textSize="18dp"
+							android:padding="5dip"
+							android:layout_marginLeft="5dp"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/runitVal" >
+						</TextView>
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:layout_marginLeft="5dp"
+							android:padding="5dip" android:textSize="18dp"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/cunitVal" >
+						</TextView>	
+						<EditText 
+						    android:inputType="textCapSentences"
+							style="@style/findEditBigScreenStyle"
+							android:id="@+id/qtyEF" 
+							android:layout_marginLeft="5dp"
+							android:layout_width="60dp"	
+					        android:background="@drawable/editext_border" 
+							android:hint="@string/MAINSCR_PROD_DETAILS_PROQTY">
+						</EditText>	 
+					    <Button 
+							android:layout_marginLeft="5dp"
+							android:id="@+id/cartbtn"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/MAINSCR_PROD_DETAILS_PROADDTOCART"
+							android:background="@drawable/btn_blue1" style="@style/innerBtnStyle"
+							android:layout_gravity="center_vertical|center_horizontal"/>	
+					</LinearLayout> --> 				
+					<!-- <LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+				     	android:layout_marginTop="10dip"
+						android:id="@+id/text1ll"
+				     	android:visibility="gone"
+						android:layout_height="wrap_content" >
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:padding="5dip" android:textSize="18dp"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/text1Val" >
+						</TextView>
+					</LinearLayout>  -->
+			
+					<LinearLayout 
+					     android:orientation="vertical"
+					     android:layout_height= "wrap_content" 					     
+					     android:id="@+id/dynll"
+					     android:minHeight="10dip" 	
+						 android:layout_width="fill_parent">
+					</LinearLayout>
+				</LinearLayout>	
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/detailsll" android:layout_below="@+id/summaryll"
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >
+		<ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp">
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" >
+				<LinearLayout
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:layout_marginLeft="5dip"
+				     android:layout_marginTop="5dip"
+				     android:orientation="vertical">  
+					<LinearLayout 
+					     android:orientation="vertical"
+					     android:layout_height= "wrap_content" 					     
+					     android:id="@+id/dynDetailsll"
+					     android:minHeight="10dip" 	
+						 android:layout_width="fill_parent">
+					</LinearLayout>	
+				</LinearLayout>	
+				<!-- <LinearLayout
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/desclld"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal">
+					<TextView  
+						android:editable="false"
+						style="@style/appText" 
+						android:layout_marginBottom="5dp"
+						android:padding="5dip" android:textSize="18dp"
+						android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:layout_gravity="center_vertical|center_horizontal"
+						android:id="@+id/descVald" android:gravity="center_vertical|center_horizontal">
+					</TextView>
+				</LinearLayout>		 				
+				<LinearLayout
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text2ll"
+					android:layout_below="@+id/desclld"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText" android:textSize="18dp"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text2Val" >
+					</TextView>
+				</LinearLayout> 				 				
+				<LinearLayout
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text3ll" 
+					android:layout_below="@+id/text2ll"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText"
+						android:padding="5dip" android:textSize="18dp"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text3Val" >
+					</TextView>
+				</LinearLayout> 				 				
+				<LinearLayout
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/text4ll"
+			     	android:visibility="gone"
+					android:layout_below="@+id/text3ll"
+					android:layout_height="wrap_content" >
+					<TextView  
+						android:editable="false"
+						style="@style/appText" android:textSize="18dp"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/text4Val" >
+					</TextView>
+				</LinearLayout>  -->
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/imagesll" android:layout_below="@+id/detailsll"
+     	android:visibility="gone"
+		android:layout_height="wrap_content" >
+		<!-- <ScrollView 
+		    android:layout_width="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none"  android:layout_marginTop="5dp"> -->
+			<RelativeLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"			
+				android:layout_height="wrap_content" >
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+			     	android:layout_marginTop="10dip"
+					android:id="@+id/descllimg"
+			     	android:visibility="gone"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal">
+					<TextView  
+						android:editable="false"
+						style="@style/appText" 
+						android:layout_marginBottom="5dp"
+						android:padding="5dip" android:textSize="18dp"
+						android:layout_height="wrap_content"
+						android:layout_width="fill_parent"
+						android:layout_gravity="center_vertical|center_horizontal"
+						android:id="@+id/descValimg" android:gravity="center_vertical|center_horizontal">
+					</TextView>
+				</LinearLayout>	 		
+				<Gallery
+			        android:id="@+id/gallery1"
+					android:layout_below="@id/descllimg"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" />
+			    <ImageView
+			        android:id="@+id/imageview1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/gallery1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+			</RelativeLayout>
+		<!-- </ScrollView> -->
+	</LinearLayout>
+	<!-- </RelativeLayout>	
+	</ScrollView> -->	
+	<!-- <LinearLayout 
+	     android:orientation="vertical"
+	     android:layout_height= "wrap_content" 					     
+	     android:id="@+id/detAcll"
+	     android:minHeight="10dip" 	
+		 android:layout_width="fill_parent">
+	</LinearLayout> -->
+	</LinearLayout>
+	<RelativeLayout 
+	    android:orientation="horizontal" android:layout_below="@+id/imagesll"
+	    android:layout_width="fill_parent" android:layout_height="32dip" android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip" android:id="@+id/showlinear"  android:layout_alignParentBottom="true">	
+		<ImageButton 
+			android:id="@+id/showprevbtn"
+			android:gravity="left"
+			android:layout_marginLeft="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:background="@drawable/prev"  />		
+		<ImageButton 
+			android:id="@+id/shownextbtn"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:background="@drawable/next"  />
+	</RelativeLayout>	
+	</LinearLayout>
+</RelativeLayout>

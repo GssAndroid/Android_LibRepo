@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+	<script src="../library/database.js"></script>
+    <script src="../library/ajax.js"></script>
+    <script src="../library/soap.js"></script>
+    <script src="../library/constants.js"></script>
+    <!-- <script type="text/javascript" src="../library/quickpager.jquery.js"></script>-->
+     <link rel="stylesheet" type="text/css" href="../table/css/jquery.dataTables.css">
+	 <script type="text/javascript" language="javascript" src="../table/js/jquery.dataTables.js"></script>
+     <script src="../library/DynamicViewLibrary.js"></script>
+    <script src="js/index.js"></script>
+     <script src="js/context.js"></script>
+    <link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../library/waitMe.css" />
+	<script src="../mobile/jquery.mobile.js"></script>
+	 <script src="../library/waitMe.js"></script>
+    <script src="../library/customscroll.js"></script>
+    <script type="text/javascript" language="javascript" src="../library/jquery.dotdotdot.min.js"></script>
+    <!-- <script src="../table/jquery.tablesorter.js"></script>
+	<script src="../table/jquery.tablesorter.widgets.js"></script>
+    <script src="../table/jquery.tablesorter.pager.js"></script>-->
+    
+    <script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-1.9.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    	console.log('hi i am bala');
+    }
+
+    </script>
+    
+    
+</head>
+
+<body>
+
+<div data-role="page" id="page">
+
+<div data-theme="b" data-role="header" data-position="fixed" >
+	<span class="middle">  
+		<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+		<span  id="screenTitle">Activities</span>
+	</span>
+	<a href="#"  onclick="refreshScreen(['0','6','7','8','9','10','11','13'])" class="ui-btn-right" data-role="button" data-icon="refresh" data-iconpos="notext" data-mini="true" data-inline="true">Refresh</a>
+</div>
+
+<div data-role="content">  
+
+<fieldset class="ui-grid-a">
+	
+	<div style="width:100%;">
+	
+		<div class="ui-block-a" style="width:80%">
+    		 <input class="search" type="search" placeholder="" data-mini="true"/>
+    	</div>
+    	
+    	<div class="ui-block-b" style="max-width:5%">
+			<a rel="external" href="AddActivity.html" data-role="button" data-icon="add" data-mini="true"  >&nbsp;</a>
+		</div>
+		
+	</div>
+	
+</fieldset>
+	
+<div class='content' data-role='content' id="contentTable">
+        <table id="table1" >
+          	<thead class="tableheader">
+          	<tr style="display:none;"><th> </th></tr>
+			</thead>
+			<tbody>
+			</tbody> 
+       </table>
+       
+       
+       <!-- <ul data-role="listview" data-inset="true" id="list1" class="has-odd-thumb">
+       </ul> -->
+       
+       
+     
+      
+</div> 
+</div>
+</div>
+    	<script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../library/common.js"></script>
+         <script type="text/javascript" src="../library/Calendar.js"></script>
+         <script type="text/javascript" src="../library/Timezone.js"></script>
+         <script type="text/javascript" src="../library/OptionsMenu.js"></script>
+        <script type="text/javascript">
+        
+        localStorage.removeItem("selectedContacts");
+        var selectedContacts = [];
+        localStorage["selectedContacts"] = JSON.stringify(selectedContacts);
+        loadfunction = contextDetailsActivity;
+            app.initialize();
+        </script>
+         <script type="text/javascript" src="../plugin/Calendar.js"></script>
+         <script type="text/javascript" src="../plugin/Timezone.js"></script>
+     </body>
+</html>

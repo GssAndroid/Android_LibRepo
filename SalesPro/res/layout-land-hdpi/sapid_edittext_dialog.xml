@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linerll" >
+
+        <!-- <TextView 
+		android:id="@+id/myTitle2" 
+		android:layout_marginLeft="5dp"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 			
+		android:text="Please provide SAP userID"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical" 
+		android:typeface="sans" android:textStyle="bold" android:textSize="20dip"/> -->
+        <EditText 
+			    android:inputType="textCapSentences"
+				android:id="@+id/sapET"
+		        android:layout_height="wrap_content"		        
+		        android:background="@drawable/editext_border"
+		        android:hint="SAP UserID or Name Pls" 		               
+		        android:layout_gravity="right|center" android:layout_width="290dip"/>
+    </LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/bgcolor"
+	android:padding="3dp">
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:padding="2dp" >
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Contact         " android:gravity="center_vertical"/>
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" >
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+					<ImageView 
+						android:id="@+id/contactviewimg"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="15dip"
+						android:layout_marginLeft="15dip"
+						android:background="@drawable/view"/>
+					<ImageView 
+						android:id="@+id/contacteditimg"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="15dip"
+						android:layout_marginLeft="15dip"
+						android:background="@drawable/edit"/>
+				</LinearLayout>
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+					<ImageView 
+						android:id="@+id/contactsapdetailimg"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="15dip"
+						android:layout_marginLeft="15dip"
+						android:background="@drawable/details"/>
+					<ImageView 
+						android:id="@+id/ddviewimg"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="15dip"
+						android:layout_marginLeft="15dip"
+						android:background="@drawable/dd"/>
+				</LinearLayout>
+			</LinearLayout>
+	</LinearLayout>
+	<!-- <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Contact         " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/contactviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/view"/>
+		<ImageView 
+			android:id="@+id/contacteditimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/edit"/>
+		<ImageView 
+			android:id="@+id/contactsapdetailimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/details"/>
+	</LinearLayout> -->
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Interactions " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/interactionsviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/view"/>		
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Activity            " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/activityviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:layout_marginLeft="10dip"
+			android:background="@drawable/view"/>	
+		<ImageView 
+			android:id="@+id/activitycrimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/add"/>		
+	</LinearLayout>
+	<!-- <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Sales Order  " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/SOviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/view"/>
+		<ImageView 
+			android:id="@+id/SOcrimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/add"/>				
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Customer     " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/cusviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/cinfo"/>			
+	</LinearLayout> -->
+	<!-- <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="2dp">
+		<TextView 
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			style="@style/appLabel" android:text="Driving Direction     " android:gravity="center_vertical"/>
+		<ImageView 
+			android:id="@+id/ddviewimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/view"/>			
+	</LinearLayout> -->
+</LinearLayout>

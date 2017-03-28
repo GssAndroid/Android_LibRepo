@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_margin="2dip"
+	android:id="@+id/sorditem_srlheader_linear"
+	android:background="@layout/border_black"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+	<ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="50dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbgcolor"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CUSTNAME"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/custNameTV" style="@style/appText" 
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CONTNAME" />
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appText" 
+					android:id="@+id/customerTV"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+		</LinearLayout> 
+	</ScrollView>
+</LinearLayout>
+
+<ScrollView android:id="@+id/HorizontalScrollView21" 
+	android:layout_below="@+id/sorditem_srlheader_linear"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+    
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:id="@+id/custactdettbllayout1">   
+   
+</TableLayout>
+</ScrollView>
+	
+</RelativeLayout>

@@ -1,0 +1,208 @@
+/* iOS Skin */
+.ios .dw {
+    min-width: 134px !important;
+    padding: 0 !important;
+    border: 1px solid #2d3034 !important;
+    background: none !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+.ios .dwo {
+    background: none !important;
+}
+.ios .dwwr {
+    position:relative !important;
+    margin-top:40px !important;
+    background: #50515d !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#9f9fa6),color-stop(0.5, #484a55),color-stop(0.5, #272836),to(#282a39)) !important;
+    background: -moz-linear-gradient(#9f9fa6,#484a55 50%,#272836 50%,#282a39) !important;
+    background: -ms-linear-gradient(#9f9fa6,#484a55 50%,#272836 50%,#282a39) !important;
+    background: -o-linear-gradient(#9f9fa6,#484a55 50%,#272836 50%,#282a39) !important;
+}
+.ios .dwi .dwwr
+{
+    margin-top:0 !important;
+}
+
+.ios .dwv {
+    display: none !important;
+}
+.ios .dwc {
+    padding: 30px 0 !important;
+    margin: 0 2px !important;
+}
+.ios .dwhl {
+    padding: 10px 0 !important;
+}
+.ios .dwwc {
+    background: transparent !important;
+}
+.ios .dwwl {
+    margin: 4px 0 !important;
+    border-left: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+    background: #cbcce0 !important;
+    background: -webkit-gradient(linear,left bottom,left top,from(#2c2c38),color-stop(0.35, #cbcce0),color-stop(0.65, #cbcce0),to(#2c2c38)) !important;
+    background: -moz-linear-gradient(#2c2c38 0%,#cbcce0 35%, #cbcce0 65%,#2c2c38 100%) !important;
+    background: -ms-linear-gradient(#2c2c38 0%,#cbcce0 35%, #cbcce0 65%,#2c2c38 100%) !important;
+    background: -o-linear-gradient(#2c2c38 0%,#cbcce0 35%, #cbcce0 65%,#2c2c38 100%) !important;
+    box-shadow: 0 1px 1px rgba(255,255,255,0.3) !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.3) !important;
+}
+.ios td:first-child .dwwl {
+    border-radius: 3px 0 0 3px !important;
+    -webkit-border-radius: 3px 0 0 3px !important;
+}
+.ios td:last-child .dwwl {
+    border-radius: 0 3px 3px 0 !important;
+    -webkit-border-radius: 0 3px 3px 0 !important;
+}
+.ios .dww {
+    margin: 0 3px !important;
+    background: #fff !important;
+    background: -webkit-gradient(linear,left bottom,left top,from(#333),color-stop(0.10, #999),color-stop(0.30, #fff),color-stop(0.70, #fff),color-stop(0.90, #999),to(#333)) !important;
+    background: -moz-linear-gradient(#333 0%,#999 10%,#fff 30%,#fff 70%,#999 90%,#333 100%) !important;
+    background: -ms-linear-gradient(#333 0%,#999 10%,#fff 30%,#fff 70%,#999 90%,#333 100%) !important;
+    background: -o-linear-gradient(#333 0%,#999 10%,#fff 30%,#fff 70%,#999 90%,#333 100%) !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+.ios .dwpm .dww {
+    background: -webkit-gradient(linear,left bottom,left top,from(#333),color-stop(0.48, #fff),color-stop(0.52, #fff),to(#333)) !important;
+    background: -moz-linear-gradient(#000 0%,#fff 48%,#fff 52%,#000 100%) !important;
+    background: -ms-linear-gradient(#000 0%,#fff 48%,#fff 52%,#000 100%) !important;
+    background: -o-linear-gradient(#000 0%,#fff 48%,#fff 52%,#000 100%) !important;
+}
+.ios .dwpm .dwwl {
+    margin: 4px 2px !important;
+}
+.ios .dwpm .dww {
+    margin: 0 !important;
+    border: 0 !important;
+}
+.ios .dww li {
+    color: #000 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    text-shadow: none !important;
+}
+.ios .dwwo {
+    display: none !important;
+}
+.ios .dwwol {
+    height: 28px !important;
+    padding: 1px !important;
+    margin-top: -16px !important;
+    border-color: #7b8699 !important;
+    background: #6f75b0 !important;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0.5, rgba(111, 117, 176, 0.5)),color-stop(0.5, rgba(151, 157, 197, 0.5))) !important;
+    background: -moz-linear-gradient(rgba(151, 157, 197, 0.5) 50%,rgba(111, 117, 176, 0.5) 50%) !important;
+    background: -ms-linear-gradient(rgba(151, 157, 197, 0.5) 50%,rgba(111, 117, 176, 0.5) 50%) !important;
+    background: -o-linear-gradient(rgba(151, 157, 197, 0.5) 50%,rgba(111, 117, 176, 0.5) 50%) !important;
+    z-index: 10 !important;
+    left: -1px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+    filter: alpha(opacity=50) !important;
+}
+.ios .dwbc {
+    position: absolute !important;
+    top: -40px !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 5px 0 !important;
+    background: #454545 !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(69,69,69,0.7)),color-stop(0.5, rgba(37,37,37,0.7)),color-stop(0.5, rgba(16,16,16,0.7)),to(rgba(0,0,0,0.7))) !important;
+    background: -moz-linear-gradient(rgba(69,69,69,0.7),rgba(37,37,37,0.7) 50%,rgba(16,16,16,0.7) 50%,rgba(0,0,0,0.7)) !important;
+    background: -ms-linear-gradient(rgba(69,69,69,0.7),rgba(37,37,37,0.7) 50%,rgba(16,16,16,0.7) 50%,rgba(0,0,0,0.7)) !important;
+    background: -o-linear-gradient(rgba(69,69,69,0.7),rgba(37,37,37,0.7) 50%,rgba(16,16,16,0.7) 50%,rgba(0,0,0,0.7)) !important;
+    border-bottom: 1px solid #888 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+    border-top: 1px solid #888 !important;
+    border-top: 1px solid rgba(255,255,255,0.5) !important;
+}
+.ios .dwb {
+    margin: 0 5px !important;
+    padding:0 10px !important;
+    display: inline-block !important;
+    font-size: 12px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    border: 1px solid #254a93 !important;
+    background: #2461e6 !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#779be9),color-stop(0.5, #376fe0),color-stop(0.5, #2260dd)) !important;
+    background: -moz-linear-gradient(#779be9,#376fe0 50%,#2260dd 50%) !important;
+    background: -ms-linear-gradient(#779be9,#376fe0 50%,#2260dd 50%) !important;
+    background: -o-linear-gradient(#779be9,#376fe0 50%,#2260dd 50%) !important;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.3) !important;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.3) !important;
+}
+.ios .dwb-c .dwb,.ios .dwb-n .dwb {
+    border: 1px solid #1f1f1f !important;
+    background: #1a1a1a !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#7b7b7b),color-stop(0.5, #1a1a1a),color-stop(0.5, #000)) !important;
+    background: -moz-linear-gradient(#7b7b7b,#1a1a1a 50%,#000 50%) !important;
+    background: -ms-linear-gradient(#7b7b7b,#1a1a1a 50%,#000 50%) !important;
+    background: -o-linear-gradient(#7b7b7b,#1a1a1a 50%,#000 50%) !important;
+}
+.ios .dwb-a {
+    opacity: .8 !important;
+    filter: alpha(opacity=80) !important;
+}
+.ios .dwwb {
+    color: #fff !important;
+    border: 0 !important;
+    background: #3f4e68 !important;
+    background: -webkit-gradient(linear,left bottom,left top,from(#3f4e68),color-stop(0.5, #75859f),color-stop(0.5, #808ea6),to(#c7d1e2)) !important;
+    background: -moz-linear-gradient(#c7d1e2 0%,#808ea6 50%,#75859f 50%,#3f4e68 100%) !important;
+    background: -ms-linear-gradient(#c7d1e2 0%,#808ea6 50%,#75859f 50%,#3f4e68 100%) !important;
+    background: -o-linear-gradient(#c7d1e2 0%,#808ea6 50%,#75859f 50%,#3f4e68 100%) !important;
+}
+.ios .dwwl .dwb-a {
+    background: #252c36 !important;
+    background: -webkit-gradient(linear,left bottom,left top,from(#252c36),color-stop(0.5, #171e28),color-stop(0.5, #272e38),to(#6b6e75)) !important;
+    background: -moz-linear-gradient(#6b6e75 0%,#272e38 50%,#171e28 50%,#252c36 100%) !important;
+    background: -ms-linear-gradient(#6b6e75 0%,#272e38 50%,#171e28 50%,#252c36 100%) !important;
+    background: -o-linear-gradient(#6b6e75 0%,#272e38 50%,#171e28 50%,#252c36 100%) !important;
+}
+.ios .dwb-s, .ios .dwb-n {
+    width: auto !important;
+    float: right !important;
+    text-align: right !important;
+}
+.ios .dwb-c {
+    width: auto !important;
+    float: left !important;
+    text-align: left !important;
+}
+/* Bubble positioning */
+.ios.dw-bubble .dw {
+    padding: 6px !important;
+    background: #afafaf !important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#afafaf),color-stop(0.3, #1b2530)) !important;
+    background: -moz-linear-gradient(#afafaf, #1b2530 30%) !important;
+    background: -ms-linear-gradient(#afafaf, #1b2530 30%) !important;
+    background: -o-linear-gradient(#afafaf, #1b2530 30%) !important;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7) !important;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.7) !important;
+}
+.ios .dw-bubble-bottom .dw-arr {
+    border-color:transparent transparent #2d3034 transparent !important;
+}
+.ios .dw-bubble-bottom .dw-arr:after {
+    content: '' !important;
+    position: absolute !important;
+    top: -16px !important;
+    left: -17px !important;
+    border: 17px solid #afafaf !important;
+    border-color:transparent transparent #afafaf transparent !important;
+}
+.ios .dw-bubble-top .dw-arr {
+    border-color:#1b2530 transparent transparent transparent !important;
+}

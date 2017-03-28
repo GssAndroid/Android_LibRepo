@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/tasklinear" >	  
+		<ImageView 
+			android:id="@+id/addimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dip"
+			android:background="@drawable/gss" android:layout_gravity="center_vertical|center_horizontal"/>
+		
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"			    
+			    android:text="@string/SALESPRO_NAME" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"			  
+			    android:text="@string/SALESPRO_EDITION" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"			   
+			    android:text="@string/SALESPRO_DEVICE" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESPRO_VERSION" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESPRO_DETAIL" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESPRO_CRM" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESPRO_ECC" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESPRO_REG" android:layout_width="120dip" android:layout_gravity="center_vertical|center_horizontal" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+		
+		</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>	
+	<color name="bgcolor">#ffefe4</color>	
+	<color name="darkbgcolor">#ffdac0</color>	
+	<color name="tabbgcolor">#A46F27</color>		
+	<color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#ffefe4</color>
+	<color name="item_even_color">#ffdac0</color>	
+	<color name="titlebackgroundcolor">#3232CD</color> 
+    <color name="titletextcolor">#ffdac0</color> 
+    
+    <string name="hello">Hello World, ProductMainScreenForPhone!</string>
+    <string name="app_name">ProductLib</string>
+    
+    <string name="MAINSCR_PRODLIST_TITLE1">Product Lists</string>
+    <string name="MAINSCR_PROD_DETAILS_TITLE">Product Details</string>
+    <string name="MAINSCR_PROD_DETAILS_PRODESC">Product Desc.</string>
+    <string name="MAINSCR_PROD_DETAILS_PRONO">Product No.</string>
+    <string name="MAINSCR_PROD_DETAILS_PROPRICE">Price</string>
+    <string name="MAINSCR_PROD_DETAILS_PROQTY">Qty</string>
+    <string name="MAINSCR_PROD_DETAILS_PROADDTOCART">Add to Cart</string>
+    <string name="MAINSCR_PROD_SHOPINGCART_NOLIST">No products in shopping cart please select product!</string>
+        
+    <string name="IMAGE_NOT_AVAILABLE">Image not available!</string>
+    <string name="IMAGE_NOT_AVAILABLE_GIVEN_URL">No resource from given Url!</string>
+    
+	<string name="WAIT_TEXTS_AFTER_RESULT">Compiling Data...</string>
+	<string name="SEARCH_HINT_LBL">  Search</string>
+	<string name="CATSEL_LBL">Select Category</string>
+	<string name="CUSTOMER_SER_EMP_LBL">Enter Customer name to search.</string>
+	<string name="CUSTOMER_SER_HINT">Pick Customer</string>
+	<string name="CUSTOMER_NOT_AVAILABLE">No results available. Try a different name!</string>
+	<string name="CUSTNAME_LBL">Customer  </string>
+	<string name="CUSTNAME_TOTLBL">Total  </string>
+		
+	<string name="PLIST_BTNGETINFO">Get Price</string> 
+	<string name="PLACE_ORDER_BTN">Place Order</string> 
+	<string name="CUST_NOT_AVAILABLE">Please select the customer!</string>
+	
+	<string name="COMMON_DG_DELTHIS">Do you really want to delete this item?</string>
+	<string name="OK">Ok</string>
+	<string name="CANCEL">Cancel</string>	
+	
+	<string name="ADD_CART">Added Successfully!</string>
+	<string name="ADD_CART_ALREADY">This item already exits in Shopping Cart!</string>
+</resources>

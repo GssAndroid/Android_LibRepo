@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/TaskRelativeLayout01" 
+    android:background="@color/bgcolor"
+	android:layout_width="fill_parent" 	
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:isScrollContainer="true">	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/contactslinear" >	
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">     
+			<!-- <EditText 
+			    android:inputType="textCapSentences"
+				style="@style/findEditBigScreenStyle"
+				android:id="@+id/searchBEF" 
+				android:layout_marginRight="10dp"
+				android:drawableLeft="@drawable/search_icon"
+				android:hint="@string/SEARCH_HINT_LBL">
+			</EditText> -->
+			<EditText 
+			    android:inputType="textCapSentences"
+			    android:layout_width="wrap_content"
+			    android:minWidth="250dp"
+			    android:minHeight="50dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/searchBEF" 
+				android:scrollbarStyle="insideOverlay"
+				android:text=""
+				android:drawableLeft="@drawable/search_icon"
+				android:hint="@string/SEARCH_HINT_LBL" android:layout_gravity="center_vertical|center_horizontal">
+			</EditText>
+		</LinearLayout>
+	</LinearLayout>
+	<HorizontalScrollView 
+	    android:id="@+id/HorizontalScrollView01" 
+        android:layout_width="match_parent"         
+        android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+			android:orientation="vertical" 
+			android:layout_weight="1"
+			android:layout_height="fill_parent"> 
+			<TableLayout 
+			    android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/vstckmaintbllayout2">
+				<TableRow style="@style/HeaderRow" android:layout_height="wrap_content" android:layout_width="match_parent">			        
+			    </TableRow>
+			</TableLayout>
+			<ListView 
+				android:layout_width="match_parent" 
+				android:layout_height="fill_parent"
+				android:layout_below="@+id/contactslinear"
+				android:drawSelectorOnTop="false" 
+			    android:layout_weight="1"
+				android:cacheColorHint="#00000000" 	
+				android:id="@android:id/list" 
+				android:layout_marginTop="2px" >
+			</ListView>
+		</LinearLayout>
+	</HorizontalScrollView> 
+</LinearLayout>

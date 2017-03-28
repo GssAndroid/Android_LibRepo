@@ -1,0 +1,82 @@
+/* jQuery Mobile Theme */
+.jqm .dwo {
+    background: none !important;
+}
+.jqm .dw {
+    padding: 6px !important;
+    z-index: 1003 !important;
+}
+.jqm .dwv {
+    position: static !important;
+    width: auto !important;
+    padding: .7em 15px .7em 15px !important;
+    border: 0 !important;
+}
+.jqm .dwwr {
+    border: 0 !important;
+    padding:0 !important;
+}
+.jqm .dwpm .dwwo {
+    background: none !important;
+}
+.jqm .dwc {
+    margin: 0 !important;
+    padding: 30px 5px 5px 5px !important;
+ }
+.jqm .dwhl {
+    padding: 5px !important;
+}
+.jqm .dwwb {
+    margin: 0 !important;
+    border: 0 !important;
+}
+.jqm .dwwb span {
+    padding: 0 !important;
+}
+.jqm .dwwbp .ui-btn-inner {
+    font-size: 40px !important;
+    -webkit-border-radius: 3px 3px 0 0 !important;
+    -moz-border-radius: 3px 3px 0 0 !important;
+    border-radius: 3px 3px 0 0 !important;
+}
+.jqm .dwwbm .ui-btn-inner {
+    font-size: 32px !important;
+    -webkit-border-radius: 0 0 3px 3px !important;
+    -moz-border-radius: 0 0 3px 3px !important;
+    border-radius: 0 0 3px 3px !important;
+}
+.jqm .dwwbp span {
+    font-weight: normal !important;
+}
+.jqm .dwbc .ui-btn {
+    margin:.5em 5px !important;
+}
+.jqm .dwbc .ui-btn-inner {
+    font-size:12px !important;
+}
+/* Bubble positioning */
+.jqm .dw-bubble-bottom .dw-arr
+{
+    border-color:transparent transparent #444 transparent !important;
+}
+.jqm .dw-bubble-top .dw-arr
+{
+    border-color:#222 transparent transparent transparent !important;
+}
+/* Docked */
+.jqm.dw-bottom .dw, .jqm.dw-top .dw {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+.jqm.dw-top .dw {
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+}
+.jqm.dw-bottom .dw {
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}

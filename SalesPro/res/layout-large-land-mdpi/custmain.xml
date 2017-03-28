@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+		
+	    <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dip"	
+			android:id="@+id/searchlinear">
+			     			
+			
+			<EditText 
+			    android:inputType="textCapSentences"
+				android:id="@+id/customerET"
+		        android:layout_height="wrap_content"
+		        android:hint="Customer Search"
+		        android:background="@drawable/editext_border" 
+		        android:drawableLeft="@drawable/search_icon"
+		        android:layout_gravity="right|center_vertical" android:layout_width="200dip"/>
+			
+			<ImageButton 
+				android:id="@+id/custsearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/search1" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip" />
+		</LinearLayout>
+
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:layout_below="@+id/searchlinear"
+			android:id="@+id/showlinear" android:visibility="gone" >
+			<TextView  
+			    android:layout_height="wrap_content" 
+			    android:id="@+id/customerMainTV1"
+			    style="@style/appLabel"
+			    android:text="@string/SALESORDPRO_CUST_LBLCUST" android:layout_width="120dip" android:layout_gravity="left|center_vertical" 
+			    android:minWidth="120dip" android:textSize="18dip"/>
+			
+			<Spinner 
+				android:id="@+id/customer_sp"
+		        android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_weight="1" android:layout_gravity="center_vertical" android:layout_width="wrap_content"/>
+			
+			<ImageButton 
+				android:id="@+id/showsearchbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@drawable/back1" android:layout_gravity="right|center_vertical" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+		</LinearLayout>
+		
+		
+		<Button 
+			android:id="@+id/showCustBtn"
+	        android:text="@string/SALESORDPRO_CUST_BTNGETINFO"
+	        android:background="@drawable/btn_blue1" style="@style/innerBtnStyle"
+	        android:layout_gravity="center" 
+	        android:layout_marginTop="20dip" android:visibility="gone" />
+	</LinearLayout>

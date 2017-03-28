@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>
+	<color name="bgcolor">#ffefe4</color>
+	<color name="darkbgcolor">#ffdac0</color>	
+	<color name="tabbgcolor">#A46F27</color>
+	
+    <string name="hello">Hello World, CalendarActivity!</string>
+    <string name="app_name">Calendar</string>
+	
+    <string name="SALESPRO_FIND_LBL">Find </string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE">Customers/Contacts </string>	
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE1">Customers/Contacts </string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE2"> Pick your contacts!</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE3">Contact yet to be selected </string>
+	
+    <string name="SCR_LBL_SRTDT">Start Dt. Time</string>
+    <string name="SCR_LBL_ENDDT">End Dt. Time</string>
+	<string name="SCR_LBLDATE">Date</string>
+	<string name="SCR_LBLTIME">TIME</string>
+    <string name="SCR_WAIT_TEXTS">Please wait while processing...</string>
+    <string name="SCR_APP_DET_TITLE">Appointment Details</string>
+    <string name="SCR_BRIEF_TITLE">Brief</string>
+    <string name="SCR_NOTES_TITLE">Notes</string>
+    <string name="SCR_APP_LIST_TITLE">Appointment List  </string>    
+    <string name="SCR_CRE_APP">Create Appointment</string>
+	<string name="SCR_LBLDOC">Doc# </string> 
+	
+	<color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#ffefe4</color>
+	<color name="item_even_color">#ffdac0</color>
+</resources>

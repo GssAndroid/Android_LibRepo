@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll</title>
+
+     <script src="../library/DateTimePicker/js/zepto.js"></script>
+
+    <script src="../library/DateTimePicker/js/mobiscroll.zepto.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.ios.js" type="text/javascript"></script>
+    <script src="../library/DateTimePicker/js/mobiscroll.android-ics.js" type="text/javascript"></script>
+
+    <link href="../library/DateTimePicker/css/mobiscroll.core.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.android-ics.css" rel="stylesheet" type="text/css" />
+    <link href="../library/DateTimePicker/css/mobiscroll.ios.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            var curr = new Date().getFullYear();
+            var opt = {
+                'date': {
+                    preset: 'date',
+                    dateOrder: 'mmddyy'
+                },
+                'datetime': {
+                    preset: 'datetime'
+                },
+                'time': {
+                    preset: 'time',
+                    timeFormat: 'HH:ii:ss',
+                    timeWheels: 'HHiiss'
+                },
+                'credit': {
+                    preset: 'date',
+                    dateOrder: 'mmyy',
+                    dateFormat: 'mm/yy',
+                    startYear: curr,
+                    endYear: curr + 10,
+                    width: 100
+                },
+                'btn': {
+                    preset: 'date',
+                    showOnFocus: false
+                },
+                'inline': {
+                    preset: 'date',
+                    display: 'inline'
+                }
+            }
+
+          
+        $('.datepicker').val('02/05/2013').scroller('destroy').scroller($.extend(opt['date'], { theme: 'android-ics light', mode: 'mixed' }));
+        $('.timepicker').val('').scroller('destroy').scroller($.extend(opt['time'], { theme: 'android-ics light', mode: 'mixed' }));
+          
+          
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>Mobiscroll</h1>
+        </div>
+
+        <div class="content">
+            <form id="testform">
+               
+               
+              
+                <div class="fieldcontain inline">
+                    <label for="test">Click here to try</label>
+                    <input type="text" class="text-input datepicker" />
+                    <input type="text"  class="text-input timepicker" />
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

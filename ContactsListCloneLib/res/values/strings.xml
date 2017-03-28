@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contacts</string>
+
+    <string name="detail_name">SAP details for</string>
+    <string name="CONTACTPRO_WAIT_TEXTS">Please wait while processing...</string>
+    <string name="CONTACTPRO_WAIT">Contacting Server...</string>
+    
+    <string name="SALESPRO_FIND_LBL">Find </string>
+    
+    <string name="SALESPRO_ERR_SERVER_RES">Error in Server Response!</string>
+    
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>
+	
+	<color name="bgcolor">#ffefe4</color>	
+	<color name="darkbgcolor">#ffdac0</color>
+	
+	<color name="tabbgcolor">#A46F27</color>	
+	
+	<color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#ffdac0</color>
+	<color name="item_even_color">#ffefe4</color>
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent">	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_margin="2dip"
+		android:id="@+id/phone_scroll_linear"
+		android:background="@drawable/activity_border"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ScrollView 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="60dip" android:fadeScrollbars="false" android:fadingEdge="none">
+			<LinearLayout 
+				android:orientation="vertical"
+				android:background="@color/darkbgcolor"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="5dip">
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" 
+						android:id="@+id/contactTitle1"/>
+					<ImageButton 
+						android:id="@+id/custsearchbtn1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" 
+				        android:visibility="gone"
+				        android:background="@drawable/search" 
+				        android:layout_gravity="center_vertical" android:layout_margin="3dip"/>
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" 
+						android:id="@+id/contactTitle2"/>
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="center_vertical" 
+						android:layout_weight="1"/>
+					<ImageButton 
+						android:id="@+id/custdelbtn"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" 
+				        android:background="@drawable/delete" android:layout_gravity="right|center_vertical" android:layout_marginRight="5dip"/>					
+					<ImageButton 
+						android:id="@+id/custsearchbtn2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" 
+				        android:visibility="gone"
+				        android:background="@drawable/search" android:layout_gravity="right|center_vertical" android:layout_margin="3dip"/>
+				</LinearLayout>
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="center_vertical|center" 
+					android:id="@+id/contactTitle3"/> 
+				<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                  	android:layout_width="fill_parent"
+                  	android:layout_height="fill_parent">				
+					<LinearLayout 
+					    android:orientation="vertical"
+					    android:layout_height="wrap_content"
+					    android:minHeight="50dip"
+					    android:id="@+id/contactdetails" 	
+						android:layout_width="fill_parent">
+					</LinearLayout>
+				</HorizontalScrollView>
+			</LinearLayout> 
+		</ScrollView>
+	</LinearLayout>	
+	<ScrollView 
+		android:orientation="vertical" android:layout_below="@+id/phone_scroll_linear"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			<LinearLayout 
+			    android:orientation="horizontal"  android:id="@+id/phone_head_linear1"
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+				<TextView  
+				    android:layout_height="wrap_content" style="@style/appLabel" 
+				    android:text="@string/ACTSCR_ACTTYP_TITLE" android:layout_width="160dp" android:layout_gravity="left|center_vertical"/>
+				<Spinner 
+				    android:layout_marginRight="10dip"
+					android:id="@+id/activity_sp"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right|center_vertical" android:layout_width="150dip" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:orientation="horizontal" android:layout_below="@+id/phone_head_linear1" android:id="@+id/phone_head_linear5"
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+				<TextView  
+				    android:layout_height="wrap_content" style="@style/appLabel" 
+				    android:text="@string/ACTSCR_STATUS_TITLE" android:layout_width="160dp" android:layout_gravity="left|center_vertical"/>
+				<Spinner 
+				    android:layout_marginRight="10dip"
+					android:id="@+id/status_sp"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right|center_vertical" android:layout_width="150dip" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:orientation="horizontal"
+			    android:layout_width="fill_parent" android:layout_below="@+id/phone_head_linear5" android:id="@+id/stdatell"
+			    android:layout_height="wrap_content" android:layout_marginTop="10dip">
+				<TextView  
+				    android:layout_height="wrap_content"  style="@style/appLabel" 
+				    android:layout_width="160dp" android:layout_gravity="left|center_vertical" android:text="@string/ACTSCR_LBL_SRTDT"/>
+
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="right|center_vertical"
+				    android:layout_marginRight="10dip"
+				    android:orientation="vertical" >
+
+					<TextView 
+						android:id="@+id/st_date"
+						android:text="@string/ACTSCR_LBLDATE" 
+				        android:layout_height="wrap_content"
+						android:textColor="@color/black"
+				        android:layout_width="wrap_content"  />
+				    <TextView 
+						android:id="@+id/st_time"
+						android:text="@string/ACTSCR_LBLTIME" 
+						android:layout_marginLeft="5dip"
+						android:textColor="@color/black"
+				        android:layout_height="wrap_content"
+				        android:layout_width="wrap_content" />		       
+				</LinearLayout>		
+			</LinearLayout>
+			<LinearLayout 
+			    android:orientation="horizontal" android:layout_below="@+id/stdatell" android:id="@+id/enddatell"
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+				<TextView  
+				    android:layout_height="wrap_content"  style="@style/appLabel"
+				    android:layout_width="160dp" android:layout_gravity="left|center_vertical" android:text="@string/ACTSCR_LBL_ENDDT"/>
+				<LinearLayout 
+				    android:orientation="horizontal"
+				    android:layout_marginRight="10dip"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+					<TextView 
+						android:id="@+id/ed_date"
+						android:text="@string/ACTSCR_LBLDATE" 
+				        android:layout_height="wrap_content"
+						android:textColor="@color/black"
+				        android:layout_width="wrap_content"  />
+				    <TextView 
+						android:id="@+id/ed_time"
+						android:text="@string/ACTSCR_LBLTIME" 
+						android:layout_marginLeft="5dip"
+						android:textColor="@color/black"
+				        android:layout_height="wrap_content"
+				        android:layout_width="wrap_content" />		       
+				</LinearLayout>					
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="10dip"
+				android:layout_below="@+id/enddatell"
+				android:layout_gravity="right|center_vertical"
+				android:id="@+id/tzonelinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:layout_height="wrap_content"
+					android:layout_width="160dp"
+					android:id="@+id/tzoneLbl" 
+					android:text="@string/ACTSCR_TZONE" android:layout_gravity="left|center_vertical">
+				</TextView>							
+				 <Spinner 
+					android:id="@+id/tzoneSpn"
+			        android:layout_height="wrap_content"
+			        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="100dip"/>
+			</LinearLayout>
+			<LinearLayout 
+			    android:orientation="vertical" android:layout_below="@+id/tzonelinear" android:id="@+id/phone_head_linear2"
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">		
+				<!-- <TextView  
+				    android:layout_height="wrap_content"  style="@style/appLabel"
+				    android:text="@string/ACTSCR_BRIEF_TITLE" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1"  /> -->		
+				<EditText 
+				    android:inputType="textCapSentences|textImeMultiLine|textAutoCorrect"
+					android:id="@+id/calldescET"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:hint="@string/ACTSCR_BRIEF_TITLE"/>
+			</LinearLayout>
+			<LinearLayout 
+			    android:orientation="vertical" android:layout_below="@+id/phone_head_linear2" android:id="@+id/phone_head_linear3"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<!-- <TextView  
+				    android:layout_height="wrap_content"  style="@style/appLabel"
+				    android:text="@string/ACTSCR_NOTES_TITLE" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" /> -->
+				<EditText 
+				    android:id="@+id/notesET"
+				    android:inputType="textCapSentences|textImeMultiLine|textAutoCorrect"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:scrollbarStyle="insideOverlay" android:minHeight="100dip" android:hint="@string/ACTSCR_NOTES_TITLE"/>
+			</LinearLayout>    			
+			<LinearLayout 
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+				android:id="@+id/showlinear" android:layout_marginBottom="10dip" android:layout_below="@id/phone_head_linear3">
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<ImageButton
+					    android:id="@+id/captureimgbtn"
+					    android:layout_marginLeft="20dip"
+					    android:layout_marginRight="10dip" 
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:src="@drawable/capture_32" />		    
+					<ImageButton
+					    android:id="@+id/galleryimgbtn"
+					    android:layout_width="wrap_content"
+					    android:layout_marginLeft="10dip"
+					    android:layout_marginRight="10dip" 
+					    android:layout_height="wrap_content"
+					    android:src="@drawable/gallery_32" />			
+					<Button 
+						android:id="@+id/cancelBtn"
+			   		    android:text="Cancel"
+				        android:layout_marginRight="10dip" 
+				        android:layout_marginLeft="10dip" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+				        android:layout_height="wrap_content" android:layout_width="wrap_content" />			
+					<Button 
+						android:id="@+id/saveBtn"
+				        android:text="Save"
+					    android:layout_marginLeft="10dip" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+				        android:layout_height="wrap_content" android:layout_width="wrap_content" />			
+				</LinearLayout>    
+			</LinearLayout>  
+		</LinearLayout>
+	</ScrollView>  
+</RelativeLayout>

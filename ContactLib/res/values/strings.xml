@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contacts</string>
+
+    <string name="detail_name">SAP details for</string>
+    <string name="CONTACTPRO_WAIT_TEXTS">Please wait while processing...</string>
+    <string name="CONTACTPRO_WAIT">Contacting Server...</string>
+     <string name="CONTACTPRO_COMPILE_DATA">Compiling Data...</string>
+    
+    <string name="SALESPRO_FIND_LBL">Find </string>
+    <string name="SALESPRO_CONT_ID_LBL">Contact Id </string>
+    <string name="SALESPRO_CUST_ID_LBL">Customer Id </string>
+    <string name="SALESPRO_CONTACT_TIT1">Name &amp; Organization</string>
+    <string name="SALESPRO_CONTACT_TIT2">Address</string> 
+    <string name="SALESPRO_CONTACT_TIT3">Email</string> 
+    <string name="SALESPRO_CONTACT_TIT4">Phone</string>
+    <string name="SALESPRO_CONTACT_TIT5">Name &amp; Details</string>
+    
+    <string name="SALESPRO_ERR_SERVER_RES">Error in Server Response!</string>
+    <string name="CONTACTPRO_SEARCH_SHORT_TEXTS">Please enter at least 2 characters!</string>
+    
+    <string name="CONTACTPRO_SETTINGS_TITLE_LBL">Settings </string>
+    <string name="CONTACTPRO_SETTINGS_ENTERPRISE_LBL">Enterprise contacts  </string>
+    <string name="CONTACTPRO_SETTINGS_PERSONAL_LBL">Enterprise &amp; Personal contacts  </string>
+    <string name="CONTACTPRO_SETTINGS_SAVE_LBL">Save</string>
+    
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>
+	
+	<color name="bgcolor">#ffefe4</color>	
+	<color name="darkbgcolor">#ffdac0</color>
+	
+	<color name="tabbgcolor">#A46F27</color>	
+	
+	<color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#ffefe4</color>
+	<color name="item_even_color">#ffdac0</color>
+	
+	<!-- <color name="item_even_color">#EEEEEE</color> -->
+	<!-- <color name="item_odd_color">#D3DBE8</color>
+	<color name="item_even_color">#BDD0F2</color> -->
+	
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE">Customers/Contacts</string>
+	
+	<string name="WAIT_TEXTS_FOR_INSERTING_CONTACTS1">Please wait... syncing contact </string>
+	<string name="WAIT_TEXTS_FOR_INSERTING_CONTACTS2"> out of </string>
+	<string name="WAIT_TEXTS_FOR_INSERTING_CONTACTS3"> contact are to be synchronized. </string>
+	<string name="WAIT_TEXTS_FOR_INSERTING_CONTACTS4"> contacts are to be synchronized. </string>
+	<string name="SYNC_CONTACTS">Sync Contacts</string>
+	<string name="SYNC_CONTACTS_MSG_TEXT">\nDuring the sync process, it is safe to navigate to a different app. \nIf you navigate to a different app, the sync will continue in the background.</string>
+	<string name="OK_TEXT"> Ok </string>
+	
+</resources>

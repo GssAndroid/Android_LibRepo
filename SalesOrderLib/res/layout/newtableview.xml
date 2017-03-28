@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+    
+ <LinearLayout
+    	android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"	
+		android:id="@+id/sosearchlinear">
+	     
+	<TextView  
+	    android:layout_height="wrap_content" 
+	    style="@style/appLabel"
+	    android:text="@string/SALESORDPRO_CUST_LBLCUST" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_marginRight="20dip" android:textSize="18dip"/>
+	
+	<EditText 
+	    android:inputType="textCapSentences"
+		android:id="@+id/customerET"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical" android:layout_width="150dip"/>
+	
+	<ImageButton 
+		android:id="@+id/custsearchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/search" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip" />
+</LinearLayout>
+
+<LinearLayout 
+	android:layout_margin="1dip"
+	android:id="@+id/socrtheaderlinear"
+	android:background="@layout/border_black"
+	android:layout_below="@+id/sosearchlinear"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_marginBottom="5dip"
+	android:visibility="gone">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/white"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				    android:layout_height="wrap_content" android:textSize="18dip"
+					android:id="@+id/custNameTV" style="@style/appLabel"
+				    android:text="" android:layout_width="fill_parent" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				    android:layout_height="wrap_content" android:textSize="18dip" 
+					android:id="@+id/custAddressTV" style="@style/appLabel"
+				    android:text="" android:layout_width="fill_parent" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+				
+				<ImageButton 
+					android:id="@+id/custbackbtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:background="@drawable/back" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+			    android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				    android:layout_height="wrap_content" android:textSize="18dip" style="@style/appLabel"
+				    android:text="Req By : " android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />			
+				<LinearLayout 
+				    android:orientation="horizontal"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+					<TextView 
+						android:id="@+id/req_date"
+						android:text="date" style="@style/appText" 
+				        android:layout_height="wrap_content" 
+				        android:layout_width="wrap_content"  android:textSize="18dip"/>
+				    <TextView 
+						android:id="@+id/req_time"
+						android:text="time" style="@style/appText" 
+						android:layout_marginLeft="5dip"
+				        android:layout_height="wrap_content"
+				        android:layout_width="wrap_content" android:textSize="18dip"/>		       
+				</LinearLayout>					
+			</LinearLayout>
+	    	
+			<LinearLayout
+			    	android:layout_alignParentTop="true"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:padding="5dip"	
+					android:id="@+id/sosearchlinear">
+				     
+				<TextView  
+				    android:layout_height="wrap_content" android:textSize="18dip" style="@style/appLabel"
+				    android:text="SO Value : " android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+				
+				<EditText 
+				    android:inputType="textCapSentences"
+					android:id="@+id/soValueET"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right|center_vertical" android:layout_width="150dip"/>
+				
+				
+			</LinearLayout>   
+		</LinearLayout> 
+</LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:id="@+id/socreationItemtbllayout1"
+        android:layout_height="fill_parent" >
+
+        <TableColumn>
+			    <TextView
+		       		android:id="@+id/TableHeaderTV1"
+		            android:text="  "
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "30dip"
+		          />
+			    </TableColumn>
+			    <TableColumn>
+	<ImageView 
+	 	 	android:id="@+id/sepimg"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="50dp"
+	  		android:layout_marginRight="5dip"
+	  		android:background="@drawable/sep_line" android:layout_gravity="center_vertical|center_horizontal"/>
+			    </TableColumn>
+   
+    </TableLayout>
+</RelativeLayout>

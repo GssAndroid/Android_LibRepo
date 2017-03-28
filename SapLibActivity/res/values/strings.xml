@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>	
+	
+	<color name="bgcolor">#ffefe4</color>
+	<color name="darkbgcolor">#ffdac0</color>
+	
+	<color name="tabbgcolor">#A46F27</color>	
+	
+    <string name="hello">Hello World, SapLibActivityActivity!</string>
+    <string name="app_name">SapLibActivity</string>
+    <string name="FIND_LBL">Find </string>
+    <string name="ACTSCR_LBLSTARTDATE">Start Date </string>
+    <string name="ACTSCR_LBLCUSTNAME">Cust.Name </string>
+    <string name="ACTSCR_BRIEF">Brief </string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE">Customers/Contacts </string>	
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE1">Customers/Contacts </string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE2"> Pick your contacts!</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAMETITLE3">Contact yet to be selected </string>
+	
+	<string name="ACTSCR_LBLCONTCTNAME">Contact Name </string>
+	<string name="ACTSCR_LBLPRODDESC">Product Desc. </string>
+	<string name="ACTSCR_ACTORD"> Document# </string>
+	
+    <string name="ACTSCR_LBL_SRTDT">Start Dt. Time</string>
+    <string name="ACTSCR_LBL_ENDDT">End Dt. Time</string>
+	<string name="ACTSCR_LBLDATE">Date</string>
+	<string name="ACTSCR_LBLTIME">TIME</string>
+    <string name="ACTSCR_WAIT_TEXTS">Please wait while processing...</string>
+	<string name="ACTSCR_WAIT_TEXTS_AFTER_RESULT">Compiling Data...</string>	
+
+    <string name="ACTSCR_CRE_ACT">Create Activity</string>
+    <string name="ACTSCR_CRE_APP">Create Appointment</string>
+    <string name="ACTSCR_APP_DET_TITLE">Appointment Details</string>
+    <string name="ACTSCR_CRE_ACT_TITLE">Create Activity</string>
+    <string name="ACTSCR_ACT_DET_TITLE">Activity Details</string>
+    <string name="ACTSCR_ACT_LIST_TITLE">Activities</string>
+    <string name="ACTSCR_BRIEF_TITLE">Brief</string>
+    <string name="ACTSCR_NOTES_TITLE">Notes</string>
+    <string name="ACTSCR_ACTTYP_TITLE">Activity Type  </string>
+    <string name="ACTSCR_STATUS_TITLE">Status  </string>
+    <string name="ACTSCR_LIST_TITLE">Activity List  </string>
+    
+	<string name="ACTSCR_TZONE">Time Zone </string>
+	
+	<string name="ACTSCR_LBLDOC">Doc# </string> 
+</resources>

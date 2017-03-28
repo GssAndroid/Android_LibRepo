@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+	android:layout_marginBottom="10dip" android:id="@+id/showlinear"  android:layout_alignParentBottom="true">
+	<!-- <ImageButton 
+		android:id="@+id/showprevbtn"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="10dip"		
+		android:layout_marginRight="30dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/prev"  />
+	
+	<ImageButton 
+		android:id="@+id/shownextbtn"
+		android:layout_centerInParent="true"
+		android:layout_marginRight="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/next"  /> -->
+</RelativeLayout>	
+
+<ScrollView
+    android:id="@+id/sorditemdet_scroll1"
+    android:layout_width="fill_parent"
+    android:layout_height="320dip"
+    android:layout_marginBottom="10dip"
+    android:scrollbars="vertical" android:background="@color/darkbgcolor">
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/salesorditemdettbllayout1">
+</TableLayout>
+
+</ScrollView>
+
+<!-- <View
+   	 android:id="@+id/gradientline"
+     android:layout_width="fill_parent"
+     android:background="@layout/border_black"
+     android:layout_below="@+id/sorditemdet_scroll1"
+     android:layout_height="1dip"></View>  -->
+     
+<ScrollView
+    android:id="@+id/sorditemdet_scroll2"
+    android:layout_marginTop="10dip"
+    android:layout_below="@+id/gradientline"
+    android:layout_width="fill_parent"
+    android:layout_height="320dip"
+    android:scrollbars="vertical">
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/salesorditemdettbllayout2">
+</TableLayout>
+
+</ScrollView>
+</RelativeLayout>

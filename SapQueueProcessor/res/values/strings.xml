@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SapQueueProcessorMainActivity!</string>
+    <string name="app_name">SapQueueProcessor</string>
+    <string name="SCR_TITLE">Queue List </string>
+    <string name="QUEUE_EMPTY">No Queue List ! </string>
+    <string name="WAIT_TEXTS">Please wait while processing...</string>
+    <string name="DET_TEXTS">Details</string>
+    <string name="LOG_TEXTS">Logs</string>
+    <string name="SCR_LOG_TITLE">Logs List </string>
+    <string name="SCR_LOG_DETAILS_TITLE"> Log Details </string>
+    <string name="LOGS_EMPTY">No Log List ! </string>
+
+	<color name="white">#FFFFFF</color>
+	<color name="bgcolor">#E1F1FF</color>
+	<color name="tabbgcolor">#2E7FC1</color>	
+	<color name="bluelabel">#0000FF</color>	
+	<color name="titlebackgroundcolor">#3232CD</color> 
+	
+	<color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#CEE8FF</color>
+	<color name="item_even_color">#E1F1FF</color>
+</resources>

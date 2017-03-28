@@ -1,0 +1,19 @@
+int attr text 0x7f010000
+int attr textColor 0x7f010001
+int attr textSize 0x7f010002
+int drawable ic_launcher 0x7f020000
+int id layout_root 0x7f060000
+int id skip 0x7f060001
+int layout main 0x7f030000
+int layout qpdialog_checkbox 0x7f030001
+int string WAIT_TEXTS_SEND_TO_SAP 0x7f040002
+int string app_name 0x7f040001
+int string hello 0x7f040000
+int style LargeTitleTheme 0x7f050001
+int style titleTextStyle 0x7f050000
+int[] styleable Gallery1 { 0x0101004c }
+int styleable Gallery1_android_galleryItemBackground 0
+int[] styleable LabelView { 0x7f010000, 0x7f010001, 0x7f010002 }
+int styleable LabelView_text 0
+int styleable LabelView_textColor 1
+int styleable LabelView_textSize 2

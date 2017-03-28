@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- <ImageView 
+		android:layout_width="wrap_content" 
+		android:id="@+id/info" 
+		android:layout_height="wrap_content" 
+		android:src="@drawable/info_btn" 
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_marginRight="3dip" android:layout_marginTop="10dip">
+	</ImageView> -->
+	<ScrollView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none" android:layout_centerInParent="true">
+		<RelativeLayout 
+		    android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		    android:layout_gravity="top|center" android:paddingTop="10dp"
+		    android:paddingBottom="10dp">
+			<LinearLayout
+			    android:orientation="horizontal"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/mainbtnlayout1">				
+				<Button
+					android:id="@+id/contactsBtn" android:background="@drawable/enterprisecontact" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="10dip" android:focusable="true" android:focusableInTouchMode="true" />			
+				<Button
+					android:id="@+id/appointmentsBtn" android:background="@drawable/appoinments" style="@style/mainImgBtnStyle"/>
+			</LinearLayout>  	
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainbtnlayout2"
+				android:layout_below="@+id/mainbtnlayout1"
+				android:paddingTop="10dip">	
+				<Button
+					android:id="@+id/customerBtn" android:background="@drawable/creditinfo" style="@style/mainImgBtnStyleForCredit" 
+					android:layout_marginRight="10dp" />						
+				<Button
+					android:id="@+id/pricelistBtn" android:background="@drawable/pricelist" style="@style/mainImgBtnStyle"/>		
+			</LinearLayout> 
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/mainbtnlayout2"
+				android:id="@+id/mainbtnlayout3"
+				android:paddingTop="10dp" >		
+				<Button
+					android:id="@+id/activitiesBtn" android:background="@drawable/activities" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="10dp" />	
+				<Button
+					android:id="@+id/salesordBtn" android:background="@drawable/salesorders" style="@style/mainImgBtnStyle"/>		
+			</LinearLayout>  
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/mainbtnlayout3"
+				android:id="@+id/mainbtnlayout4"
+				android:paddingTop="10dp" >		
+				<Button
+					android:id="@+id/quotationsBtn" android:background="@drawable/quotations" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="10dp" />	
+				<Button
+					android:id="@+id/inventoryBtn" android:background="@drawable/inventory" style="@style/mainImgBtnStyle"/>	
+			</LinearLayout>  
+		</RelativeLayout>
+	</ScrollView>	
+</RelativeLayout>

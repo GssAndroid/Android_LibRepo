@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="titleTextStyle" >
+	    <item name="android:textSize">20dip</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	</style>
+	
+	<style name="LargeTitleTheme">
+	    <item name="android:windowTitleSize">35dip</item>
+  		<item name="android:windowTitleStyle">@style/titleTextStyle</item>
+	</style>
+	
+</resources>

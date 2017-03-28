@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+ 	style="@style/HeaderText"
+	android:id="@+id/TableHeaderTV1"
+    android:textStyle="bold"
+    android:editable="false"
+    android:clickable="true"	           
+    android:textSize="18dp"
+ />

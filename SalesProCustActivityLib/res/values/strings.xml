@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="bluebg">#91A2BD</color>
+	<color name="bluebtnbg">#1284FF</color>
+	<color name="bluelabel">#0000FF</color>
+	
+	<color name="bgcolor">#ffefe4</color>	
+	<color name="darkbgcolor">#ffdac0</color>
+	
+	<color name="titlebackgroundcolor">#3232CD</color> 
+    <color name="titletextcolor">#ffdac0</color> 
+	
+    <color name="list_bg_color">#FFFFFF</color>
+	<color name="item_selected">#63A4F2</color>
+	<color name="item_odd_color">#ffefe4</color>
+	<color name="item_even_color">#ffdac0</color>
+    <string name="COMPILE_DATA">Compiling Data...</string>
+	
+    <string name="hello">Hello World!</string>
+    <string name="app_name">SalesProCustActivityLib</string>
+
+    <string name="SALESORDPRO_SORDHEAD_LBL_CUSTNAME">Customer</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SONO">SO#</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_SOVAL">Value</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_REQDAT">Req.Date</string> 
+	<string name="SALESORDPRO_SORDHEAD_LBL_CUSTNO">Customer#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_ICONSTS">Status</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_CONTNAME">Contact</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PONO">PO#</string>
+	<string name="SALESORDPRO_SORDHEAD_LBL_PODATE">PO.Date</string>
+	<string name="WAIT_TEXTS">Please wait while processing...</string>
+	<string name="CUSTOMER_WAIT_TEXTS">Contacting Server...</string>
+	
+	<string name="SALESORDPRO_CUST_NAME">Name   </string> 
+    <string name="SALESORDPRO_CUST_BLCKD">Credit Block </string> 
+    <string name="SALESORDPRO_CUST_RISKCAT">Risk Category  </string> 
+    <string name="SALESORDPRO_CUST_CRLMT">Credit Limit  </string> 
+    <string name="SALESORDPRO_CUST_CREXPO">Credit Exposure  </string> 
+    <string name="SALESORDPRO_CUST_CRCURR">Currency  </string> 
+    <string name="SALESORDPRO_CUST_CRUSED">Credit Limit used  </string> 
+    <string name="SALESORDPRO_CUST_RATING">Rating  </string> 
+    <string name="SALESORDPRO_CUST_CUSTNO">Customer No  </string> 
+    <string name="SALESORDPRO_CUST_CITY">City  </string> 
+    <string name="SALESORDPRO_CUST_REG">Region  </string> 
+    <string name="SALESORDPRO_CUST_COUNTRY">Country  </string> 
+    <string name="SALESORDPRO_CUST_TITLE1">Credit Info for Customer</string> 
+    <string name="SALESORDPRO_CUST_TITLE2">Select Customer</string> 
+    <string name="SALESORDPRO_CUST_LBLCUST"> Customer  </string>
+    <string name="SALESORDPRO_CUST_BTNGETINFO">Get Credit Info</string> 
+    <string name="SALESORDPRO_CUSTDET_TITLE">Customer Credit Info</string> 
+</resources>

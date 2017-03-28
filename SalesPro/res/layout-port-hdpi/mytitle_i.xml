@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/customtitlell">
+	<ImageView 
+		android:id="@+id/appicon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical" 
+		android:background="@drawable/titleicon"/>
+	<TextView 
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:id="@+id/myTitle" 
+		android:layout_marginLeft="5dp"
+		android:layout_width="wrap_content"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent" 
+		android:textColor="@color/white" 
+		android:gravity="center_vertical" android:layout_gravity="center_vertical" android:typeface="sans" android:textStyle="bold"/>
+	<ImageView 
+		android:id="@+id/info"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical" android:layout_gravity="center_vertical" 
+		android:background="@drawable/info_btn_title" android:layout_marginRight="5dp"/>
+</LinearLayout> 
+<!-- <TextView 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/myTitle" 
+	android:layout_marginLeft="5dp"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:textColor="@color/white" 
+	android:gravity="center_vertical" android:layout_gravity="center_vertical" android:typeface="sans" android:textStyle="bold"/> 
+ -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="750dp"
+  android:orientation="horizontal"
+  android:layout_height="60dp"
+  android:id="@+id/relativeLayout1"
+  android:background="@android:color/black">
+
+   <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Tap on "
+        android:gravity="center"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@android:color/white">
+    </TextView>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:src="@drawable/dollar"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="5dip"
+        android:id="@+id/imageView1">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Icon to Calculate the Total Price"
+        android:gravity="center"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@android:color/white">
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/vanstocklinear" >
+		<!-- <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1">   			
+			<EditText 
+			    android:inputType="textCapSentences"
+				style="@style/findEditBigScreenStyle"
+				android:id="@+id/searchBEF" 
+				android:layout_width="wrap_content"			
+				android:text="" android:layout_weight="1"
+		        android:background="@drawable/editext_border" 
+		        android:drawableLeft="@drawable/search_icon"
+				android:hint="Search">
+			</EditText> -->
+			<!-- <TextView
+	         	style="@style/appLabel"
+	       		android:id="@+id/catTV"		            		         
+	            android:editable="false"
+	            android:text="Select Category"		            
+	            android:layout_width = "150dip" android:layout_height="wrap_content"
+	         	android:layout_gravity="center_vertical" android:layout_marginLeft="5dp"/>	 -->
+		<!-- </LinearLayout> -->		
+		<!--<ImageView 
+		 	android:id="@+id/unchckimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:background="@drawable/copyicon" android:layout_gravity="center_vertical|center_horizontal"/> 
+			
+		<ImageView 
+			android:id="@+id/addimg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:background="@drawable/add" android:layout_gravity="center_vertical|center_horizontal"/> -->			
+</LinearLayout>
+	
+	<HorizontalScrollView 
+	    android:id="@+id/HorizontalScrollView21" android:layout_below="@+id/vanstocklinear"
+        android:layout_width="wrap_content"         
+        android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+			android:orientation="vertical" android:layout_weight="1"
+			android:layout_height="match_parent"> 
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/sordheadtbllayout1">				
+			</TableLayout>		
+			<ScrollView android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TableLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:id="@+id/sordheadtbllayout2">
+				</TableLayout>
+			</ScrollView>
+		</LinearLayout>
+	</HorizontalScrollView>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_gravity="bottom|center_vertical|center_horizontal" android:layout_marginTop="10dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+		<TextView 
+			android:id="@+id/fstpgtv" 
+			android:layout_height="40dip" 
+			android:layout_gravity="center_vertical" android:layout_width="40dip"
+			android:gravity="center_vertical" android:layout_marginRight="5dp" android:textStyle="bold">
+			</TextView> 
+		<TextView
+			android:id="@+id/soprepgtv" 
+			android:layout_height="40dip" android:layout_width="40dip"  android:textStyle="bold"
+			android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical" >
+			</TextView> 
+		<TextView  
+			android:id="@+id/sopagetitle" 
+			android:typeface="normal" android:textColor="@color/black" 
+			android:textStyle="bold" android:layout_marginRight="5dp"
+			android:layout_height="40dip" android:layout_gravity="center_vertical" 
+			android:layout_width="40dip" android:gravity="center_vertical">
+			</TextView>
+		<TextView
+			android:id="@+id/sonextpgtv"  android:textStyle="bold" android:text="d "
+			android:layout_height="40dip" android:layout_width="40dip" 
+			android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:gravity="center_vertical" />
+		<TextView 
+			android:layout_width="40dip" android:text=" e"
+			android:id="@+id/solastpgtv"  android:textStyle="bold"
+			android:layout_height="40dip" android:layout_gravity="center_vertical" android:gravity="center_vertical" 
+			android:layout_marginRight="5dp">
+			</TextView>	
+	</LinearLayout>	
+</RelativeLayout>

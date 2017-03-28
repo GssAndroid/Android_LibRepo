@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"/>
+		<script src="../library/database.js"></script>
+		<script src="../library/ajax.js"></script>
+		<script src="../library/soap.js"></script>
+		<script src="../library/constants.js"></script>
+		<script src="../library/DynamicViewLibrary.js"></script>
+		<script src="js/context.js"></script>
+		<script src="js/index.js"></script>		
+		<link rel="stylesheet" href="../mobile/jquery.mobile.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../library/waitMe.css" />
+		<link rel="stylesheet" type="text/css" href="../table/css/jquery.dataTables.css">
+		<script src="../mobile/jquery.mobile.js"></script>	
+		<script src="../library/customscroll.js"></script>
+		<script src="../library/jquery.twbsPagination.js"></script>
+		<script type="text/javascript" language="javascript" src="../table/js/jquery.dataTables.js"></script>
+		<script src="../library/waitMe.js"></script>
+		<script>
+			
+		</script>
+		 <script language="javascript">
+			//alert(getQueryVariable2("imei"));
+			 function getQueryVariable2(variable) { 
+				var query = window.location.search.substring(1);
+				//alert(query);
+				var vars = query.split("&"); 
+				for (var i=0;i<vars.length;i++) { 
+					var pair = vars[i].split("="); 
+					if (pair[0] == variable) { 
+						return pair[1]; 
+					}
+				} 
+			}  
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			// Call onDeviceReady when Cordova is loaded.
+			// At this point, the document has loaded but cordova-1.9.0.js has not.
+			// When Cordova is loaded and talking with the native device,
+			// it will call the event `deviceready`.
+			//
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			// Cordova is loaded and it is now safe to call Cordova methods
+			//
+			function onDeviceReady() {
+				// Register the event listener
+				document.addEventListener("backbutton", onBackKeyDown, false);
+			}
+
+			// Handle the back button
+			//
+			function onBackKeyDown() {	
+				window.localStorage.setItem("LastScreenId", PROD_OVERVIEW);
+			}
+		</script>
+		 <style>       
+			.cattableheader tr th{
+				display:none;
+			}
+			#pickcatbtn{
+				float: left;
+				margin-right: 10px;
+			}
+			#popupPanel h1{
+				margin:5px;
+			}
+            #contentTable {
+                padding: 3px 10px 10px;
+            }
+			.ui-content{
+                padding: 3px 10px 10px;
+            }
+		 </style>   
+	</head>
+	<body>
+		<div data-role="page" id="page">
+			<div data-theme="b" data-role="header" data-position="fixed" data-tap-toggle="false" >
+				<span class="middle">  
+					<img border="0"  src="../img/icon.png" class="middle" onclick="goBack();"/>
+					<span id="screenTitle" class="title" >Sales Orders</span>
+				</span>
+			</div>	
+			<div data-role="content"> 
+				<fieldset class="ui-grid-a;">
+					<div style="width:100%;overflow: hidden;position: fixed;" >
+						<!-- <div id="pickcatbtn" >
+							<a id="createBtn" data-role="button" onclick="createCheckboxes()">
+								<span class="catTitle" >Pick Category</span>
+							</a>
+						</div> -->
+						<div class="ui-block-a" style="width:80%">
+							<input type="search" class="search" name="text" id="txtProductSearch" placeholder="Search for Customer ID,Name" value="" />
+						</div>
+						<div id="pickcatbtn" >
+							<img border="0"  src="../img/copyicon.gif" class="middle" onclick="showCopyScreen();"/>
+							<!-- <a href="salesorder_create.html" rel="external"> -->
+							<img src="../img/add_l.png" style="width:42px;height:42px;border:0" onclick="showCreateScreen();"/>
+								<!-- </a> -->
+							<!-- <img border="0"  src="../img/add_l.png" class="middle" onclick="goBack();"/> -->
+						</div>
+					</div>
+				</fieldset>
+				<br clear="all" />		
+				<!-- <div data-role="popup" id="popupPanel" data-overlay-theme="a" data-theme="c" data-dismissible="false" class="ui-corner-all" style ="background: rgb(255, 239, 228);">
+					<div data-role="header" >
+						<h1>Select Category</h1>
+					</div >					
+					<div style="margin:5px;" >
+						<input type="search" class="search1" name="text" id="txtCategorySearch" placeholder="Search for Category" value="" />
+					</div>
+					<div data-role="content" id="piccat" style = "padding-top: 0px;margin:0px;">
+						<table id="cattable" style="width:95%;">
+							<thead class="cattableheader">
+								<tr><th></th></tr>
+							</thead>
+							<tbody style="width:95%;">
+							</tbody> 
+					   </table>
+					</div>
+					<div data-role="footer" >
+						<center><a style="width: 50%;" id="showBtn" data-role="button" onclick="showSelectedNames()" >Ok</a>  </center>     
+					</div>
+				</div> -->
+				<div class='content' data-role='content' id="contentTable">
+					<table id="table1" style="margin-top:30px;">
+						<thead class="tableheader">
+						</thead>
+						<tbody>
+						</tbody> 
+				   </table>
+				</div>	
+				<div data-role="popup" id="copypopupMenu" data-theme="a" data-overlay-theme="a" >
+            <ul data-role="listview" id="copy-dialog-form" style="min-width: 520px;" data-theme="b">
+                               
+            </ul>
+			</div>	
+			</div>
+		</div>    
+		<script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../library/common.js"></script>
+		
+		<script type="text/javascript">
+		function showCreateScreen(){
+			var ceratflag;
+			ceratflag = true;
+			localStorage["COPY_FLAG"]= "";
+			localStorage["CREATE_SO_FLAG"]= ceratflag;			
+			//window.history.back();
+			window.location.href = 'salesorder_create.html?';
+		}
+		</script>
+		
+		<script type="text/javascript">
+		function showCopyScreen(){
+			var copyflag =true;			
+			localStorage["COPY_FLAG"] = copyflag;	
+			localStorage["SOCREATE_FLAG"]= "";
+			getSOCopyMaterials();
+		}
+		</script>
+		 <script type="text/javascript">
+		 var SODetails = [];
+		
+		  var notalertStr = getQueryVariable2("SOnotAlertStr");
+	    	//localStorage["REFID"] = notalertStr; 
+	    	if(notalertStr!=null){
+	    		SODetails = notalertStr.split("[.]");
+		   	 	var flag = SODetails[0];
+		   	 localStorage["QPFLAG"] = flag;
+		   		//alert(flag);
+		   	 var SOqpID = SODetails[1];
+		   	localStorage["REFID"] = SOqpID;
+		   	//alert(SOqpID);
+		   	var errmsgStr =  SODetails[2];
+		    var res = errmsgStr.replace(/%20/g, " ");
+		 	localStorage["ERRMSG"] = res;
+			//alert(res);
+			var altidStr =  SODetails[3];
+		 	localStorage["ALTID"] = altidStr;
+		 	alert(altidStr);
+	    	}	    	
+	    	
+		  </script>
+		 <script type="text/javascript">
+				loadfunction = ShowCreateScreenFromQP;				
+				app.initialize();
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="saplibactivity">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SapLibActivity/bin/saplibactivity.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

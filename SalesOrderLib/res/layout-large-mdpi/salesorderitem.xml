@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_margin="2dip"
+	android:id="@+id/sorditem_srlheader_linear"
+	android:background="@drawable/sales_item_border"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+	<ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="100dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbgcolor"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="20dp" style="@style/appLabel"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CUSTNAME"/>
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="20dp" 
+				android:id="@+id/custNameTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="20dp" style="@style/appLabel"
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_SONO" />
+				<TextView  
+				android:layout_height="wrap_content" android:textSize="20dp" 
+				android:id="@+id/soNoTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_SOVAL"/>
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" 
+					android:id="@+id/sovalueTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_REQDAT"/>
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" 
+					android:id="@+id/reqDatTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" style="@style/appLabel"
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SALESORDPRO_SORDHEAD_LBL_CONTNAME"/>
+				<TextView  
+					android:layout_height="wrap_content" android:textSize="20dp" 
+					android:id="@+id/customerTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+		</LinearLayout> 
+	</ScrollView>
+</LinearLayout>
+
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip"
+	android:layout_below="@+id/sorditem_srlheader_linear"
+	android:id="@+id/vanstocklinear" >
+	     
+	<EditText 
+	    android:inputType="textCapSentences"
+		style="@style/findEditBigScreenStyle"
+		android:id="@+id/searchBEF" 
+		android:hint=" Search"
+        android:background="@drawable/editext_border" 
+        android:drawableLeft="@drawable/search_icon"
+		android:layout_marginRight="10dp"
+		android:text="">
+	</EditText>
+</LinearLayout>
+
+<HorizontalScrollView android:id="@+id/HorizontalScrollView21" 
+					android:layout_below="@+id/vanstocklinear"
+                   android:layout_width="wrap_content"         
+                   android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:layout_weight="1"
+		android:layout_height="match_parent"> 
+		<TableLayout android:layout_height="wrap_content" 
+			android:layout_width="match_parent" android:id="@+id/sorditemtbllayout1">
+			<TableRow style="@style/HeaderRow">
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV1"
+		            android:text="@string/SALESORDPRO_SORDITEM_LBL_ITEMNO"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		            android:textSize="18dp"
+		         />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV2"
+		            android:text="@string/SALESORDPRO_SORDITEM_LBL_MATNO"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "150dip"
+		            android:textSize="18dp"
+		         />
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV3"
+		            android:text="@string/SALESORDPRO_SORDITEM_LBL_QTY"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "120dip"
+		            android:textSize="18dp"
+		          />
+		        <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV4"
+		            android:text="@string/SALESORDPRO_SORDITEM_LBL_UNIT"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "80dip"
+		            android:textSize="18dp"
+		         />         
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV5"
+		            android:text="@string/SALESORDPRO_SORDITEM_LBL_VALUE"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "120dip"
+		            android:textSize="18dp"
+		         />      
+		         <TextView
+		         	style="@style/HeaderText"
+		        	android:id="@+id/TableHeaderTV6"
+		            android:text="  "
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "80dip"
+		            android:textSize="18dp"
+		         />
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/sorditemtbllayout2">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+	</HorizontalScrollView>
+	
+</RelativeLayout>

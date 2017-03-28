@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.globalsoft.SalesPro"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+     <uses-sdk android:minSdkVersion="10"/>
+	
+
+     <application android:icon="@drawable/icon" android:label="@string/app_name"
+        android:process="com.globalsoft.sapqueueprocessorsharedprocess" android:theme="@android:style/Theme.Light">
+        
+        <provider android:name="com.globalsoft.SapLibActivity.Database.SalesProActivityCrtCP"
+           android:authorities="com.globalsoft.SapLibActivity.SalesProActivityCrtCP"> 
+        </provider>        
+        
+         <provider android:name="com.globalsoft.SapLibActivity.Database.SalesProActCrtConstraintsCP"
+           android:authorities="com.globalsoft.SapLibActivity.SalesProActCrtConstraintsCP"> 
+        </provider>     
+        
+        <provider android:name="com.globalsoft.CalendarLib.Database.SalesProAppCrtConstraintsCP"
+           android:authorities="com.globalsoft.CalendarLib.SalesProAppCrtConstraintsCP"> 
+        </provider>
+        		
+		<provider android:name="com.globalsoft.SalesPro.Database.SalesProInvntryCP"
+           android:authorities="com.globalsoft.SalesPro.SalesProInvntryCP"> 
+        </provider>
+        
+		<provider android:name="com.globalsoft.SalesOrderLib.Database.SalesOrderCP"
+           android:authorities="com.globalsoft.SalesPro.SalesOrderCP"> 
+        </provider>
+        
+        <provider android:name="com.globalsoft.SalesProCustActivityLib.Database.SalesProCustCreditCP"
+           android:authorities="com.globalsoft.SalesPro.SalesProCustCreditCP"> 
+        </provider>
+        
+        <provider android:name="com.globalsoft.SalesPro.Database.PriceListCP"
+           android:authorities="com.globalsoft.SalesPro.PriceListCP">
+        </provider>
+        
+        <receiver android:name="com.globalsoft.SalesPro.Receiver.SalesProReceiver" android:enabled="true">
+            <intent-filter  android:priority="100" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.globalsoft.SalesPro.Receiver.SalesProSmsReceiver" android:enabled="true">
+            <intent-filter android:priority="101">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+            
+            <intent-filter android:priority="101">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+            
+            <intent-filter android:priority="101">
+                <action android:name="com.android.mms.transaction.MESSAGE_SENT" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".SalesProIndex" android:configChanges="orientation" android:theme="@style/customTheme">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".SalesProActivity" android:label="@string/app_name" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_MAIN_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.CustomerListActivity" android:label="CustomerListActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+       		 <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_CUST_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>  
+        
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.CustomerListDetailScreen" android:label="CustomerListDetailScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+          <activity android:name=".SalesProEmailActivity" android:label="SalesProEmailActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+        <activity android:name=".PriceListActivity" android:label="PriceListActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+         <activity android:name=".PriceListMainTablet" android:label="PriceListMainTablet" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+        <activity android:name=".PriceListDetailScreen" android:label="PriceListDetailScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+         <activity android:name=".PriceListDetailScreenTablet" android:label="PriceListDetailScreenTablet" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+         <activity android:name=".PriceListDetailViewScreen" android:label="PriceListDetailViewScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+        <activity android:name=".StockListActivity" android:label="StockListActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        
+        <activity android:name=".StockListDetailScreen" android:label="StockListDetailScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+         <activity android:name=".SalesProDiagnosisSettings" android:label="SalesProDiagnosisSettings" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+        
+        <activity android:name=".StockListDetailView" android:label="StockListDetailView" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+          <activity android:name=".StockListDetailScreenTablet" android:label="StockListDetailScreenTablet" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+	    <activity android:name=".SalesProPhoneActivity" android:label="SalesProPhoneActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>    
+        
+   	    <activity android:name=".SalesProSmsActivity" android:label="SalesProSmsActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>   
+        
+        <activity android:name=".About" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+          
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.SalesProCustActivity" android:theme="@style/customTheme" android:label="SalesProCustActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>           
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.SalesProCustDetailScreen" android:theme="@style/customTheme" android:label="SalesProCustDetailScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+   	        
+		<activity android:name="com.globalsoft.ContactsListCloneLib.ContactsList" android:label="Contacts" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>   
+        
+        <activity android:name="com.globalsoft.ContactLib.ContactMain" android:label="Contacts" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>		      
+        <activity android:name="com.globalsoft.ContactLib.ContactsSettings" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        <activity android:name="com.globalsoft.ContactLib.ContactsList" android:label="Contacts" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        <activity android:name="com.globalsoft.ContactLib.ContactProSAPDetails" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>               
+        <activity android:name="com.globalsoft.ContactLib.AlrtActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent">
+        </activity>        
+        <service android:enabled="true" android:name="com.globalsoft.ContactLib.Service.ContactService">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_CONT_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service> 
+		<service android:enabled="true" android:name="com.globalsoft.SalesPro.Service.BackgroundService" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.LAUNCH_BG_SERVICE" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+	    </service>
+	    <service android:enabled="true" android:name="com.globalsoft.SapLibActivity.Service.ActivityBGService" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.LAUNCH_BG_SERVICE" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+	    </service>	        
+   	        
+		<service android:enabled="true" android:name="com.globalsoft.SalesPro.SalesOrderBGService" >
+             <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_BG_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+	    
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderListActivity" android:theme="@style/customTheme" android:label="SalesOrderListActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">         
+        </activity>  
+           
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderMainScreenTablet" android:theme="@style/customTheme" android:label="SalesOrderMainScreenTablet" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" >
+        </activity>    
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderItemScreen" android:theme="@style/customTheme" android:label="SalesOrderItemScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+         <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderItemScreenTablet" android:theme="@style/customTheme" android:label="SalesOrderItemScreenTablet" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderItemDetailScreen" android:theme="@style/customTheme" android:label="SalesOrderItemDetailScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>          
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCreation" android:theme="@style/customTheme" android:label="SalesOrderCreation" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCreationTablet" android:theme="@style/customTheme" android:label="SalesOrderCreationTablet" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>       
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCrtCustScreen" android:theme="@style/customTheme" android:label="SalesOrderCrtCustScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+	    <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCrtMaterialScreen" android:theme="@style/customTheme" android:label="SalesOrderCrtMaterialScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        
+	     <activity android:name="com.globalsoft.ProductLib.ProductMainScreenForTablet" android:label="@string/app_name" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        <activity android:name="com.globalsoft.ProductLib.ProductMainScreenForPhone" android:label="@string/app_name" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>                
+        <activity android:name="com.globalsoft.ProductLib.ProductDetailsForPhone" android:label="@string/app_name" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>  
+        <activity android:name="com.globalsoft.ProductLib.ProductShoppingCartForTablet" android:label="@string/app_name" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        
+        <activity android:name="com.globalsoft.SapLibActivity.CrtGenActivity" android:theme="@style/customTheme" android:label="@string/ACTSCR_CRE_ACT" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        <activity android:name="com.globalsoft.SapLibActivity.GenActivityGallery" android:theme="@style/customTheme" android:label="@string/SALESPRO_GENACTIVITYGALLERY" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>       
+        <activity android:name="com.globalsoft.SapLibActivity.ActivityListForPhone" android:theme="@style/customTheme" android:label="@string/ACTSCR_LIST_TITLE" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>   
+          
+        <activity android:name="com.globalsoft.SapLibActivity.ActivityListforTablet" android:theme="@style/customTheme"  android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        <activity android:name="com.globalsoft.CalendarLib.CalendarLists" android:theme="@style/customTheme" android:label="@string/SCR_APP_LIST_TITLE" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        <activity android:name="com.globalsoft.CalendarLib.CreateAppointment" android:theme="@style/customTheme" android:label="@string/SCR_CRE_APP" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        
+    </application>
+	
+    <uses-library android:name="com.globalsoft.SapLibActivity" android:required="true" />
+    <uses-library android:name="com.globalsoft.ContactLib" android:required="true" />
+    <uses-library android:name="com.globalsoft.SalesOrderLib" android:required="true" />
+    <uses-library android:name="com.globalsoft.SapLibSoap" android:required="true" />
+    
+    <uses-feature android:name="android.hardware.telephony" />
+        	
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	
+</manifest>
